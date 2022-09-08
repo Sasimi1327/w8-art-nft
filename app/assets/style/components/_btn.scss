@@ -1,0 +1,70 @@
+// 按鈕三角形
+.btn-triangle  {
+  position: relative;
+}
+.btn-triangle::after {
+  content:"";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  border-left: 16px solid transparent;
+  border-bottom: 16px solid $primary;
+
+  // border-top: 16px solid transparent;
+  // border-right: 16px solid $primary;
+}
+.btn-triangle:hover::after {
+  // border-right: 16px solid $dark;
+  border-bottom: 16px solid $dark;
+}
+
+// style 1 (正常按鈕)
+.btn-light {
+  background-color: $light;
+  border:1px solid $dark;
+}
+.btn-light:hover {
+  background-color: $primary;
+  color: $light;
+}
+
+// style 2 (無框按鈕)
+.btn-border:hover{
+  background-color: $primary;
+  color: $light;
+  border: 1px solid $dark;
+}
+
+// style 3 (紅底白字黑邊)
+// class: btn btn-primary 
+// 確認、出價、連結錢包
+
+.card-button {
+  display: none;
+  margin-bottom: -1px;
+  margin-right: -1px;
+  
+  @include pc {
+    color: $light;
+    background-color: $primary;
+    border: 1px solid $dark;
+  }
+  &::before {
+    content: "";
+    @include pc {
+      content: "MORE";
+    }
+
+  }
+  &::after { //三角形
+    content:"";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    border-left: 16px solid transparent;
+    border-bottom: 16px solid $primary;
+    @include pc {
+      border-bottom: 16px solid $dark;
+    }
+  }
+}

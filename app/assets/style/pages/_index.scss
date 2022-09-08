@@ -1,0 +1,173 @@
+.vertical-lr {
+  writing-mode: vertical-lr;
+}
+
+.h-373-px-lg {
+  @include pc {
+    height: 373px;
+  }
+}
+.artist-photo {
+  height: 232px;
+}
+
+
+.zindex-1 {
+  z-index: 1;
+}
+
+
+.card-image {
+  border: 1px solid $dark;
+  width: 90px;
+  height: auto;
+  @include pc {
+    width: 100%;
+    height: 100%;
+  }
+  &:hover, &.hvr { // hover後
+    cursor: pointer;
+    &::after { //半透明圖
+      content: 'MORE';
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      opacity: 0.7;
+      background-color: #000;
+      color: $light;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      @include pc {
+        content: '';
+        opacity: 0.5;
+      }
+    }
+    .card-button { //開啟 button
+      display: block;
+      z-index: 1;
+    }
+  }
+}
+
+.card-artwork {
+  width: 100%;
+  height: 100%;
+  &:hover {
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      opacity: 0.7;
+      background-color: #000;
+      color: $light;
+      @include pc {
+        content: '';
+        opacity: 0.5;
+      }
+    }
+    .artwork-aide {
+      z-index: 1;
+      display: block;
+    }
+  }
+}
+
+
+//輪播
+.swiper {
+  &-container {
+    width: 100%;
+    margin: 40px 0;
+    @include pc {
+      margin: 160px 0 80px 0;
+    }
+  }
+  &-restrict {
+    //限制輪播會超出造成x軸的情形
+    overflow: hidden;
+  }
+
+  &-wrapper {
+    align-items: center;
+  }
+  &-slide {
+    opacity: 1;
+    overflow: hidden;
+    transition: .7s;
+    & img {
+      width: 100%;
+    }
+    &-active {
+      opacity: 1;
+      z-index: 1;
+      transform: scale(2);
+    }
+  }
+
+  //分頁
+  &-pagination {
+    position: unset;
+    width: auto;
+
+    //單一樣式
+    .swiper-pagination-bullet {
+      background-color: $dark;
+      opacity: initial;
+      border-radius: 0px;
+      //點選後的樣式
+      &-active {
+        background-color: $primary;
+        width: 16px;
+      }
+    }
+  }
+}
+
+.artist {
+  &-title {
+    font-size: 32px;
+    line-height: 34px;
+    color: $light;
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    font-weight: normal;
+    @include pc {
+      font-size: 48px;
+      line-height: 50px;
+    }
+  }
+  &-more {
+    width: 25%;
+    font-size: 18px;
+    line-height: 19px;
+    padding: 4px 20px;
+    position: absolute;
+    bottom: 12px;
+    right: 12px;
+    font-weight: normal;
+  }
+  &-intro {
+    position: absolute;
+    bottom: 12px;
+    left: 12px;
+  }
+}
+
+.icon-16 {
+  width: 16px;
+  height: 16px;
+}
+
+.wallet-grp.active {
+  border-color: $primary;
+  .wallet-chk {
+    display: block;
+  }
+}

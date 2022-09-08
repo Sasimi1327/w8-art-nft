@@ -1,0 +1,46 @@
+
+.logo {
+  background-image: url(./../images/logo.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 85px;
+  height: 18px;
+  display: block;
+  text-indent: 101%;
+  overflow: hidden;
+  white-space: nowrap;
+  @include pc {
+    width: 190px;
+    height: 40px;
+  }
+}
+
+.navbar-collapse.show .search {
+  display: block;
+}
+.pb-15-px {
+  padding-bottom: 14px;
+}
+.w-40-px {
+  width: 40px;
+}
+
+.navbar {
+  position: relative;
+}
+.navbar::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 60px;
+  width: 100%;
+  height: 1px;
+  background-color: $dark;
+  @include pc {
+    top: 105px;
+  }
+}
+.link-wallet:hover {
+  background-color: $light;
+  color: $primary;
+}

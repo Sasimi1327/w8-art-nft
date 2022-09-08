@@ -1,0 +1,83 @@
+
+$custom-colors: (
+  "primary":    $primary,
+  "secondary":  $secondary,
+
+  "gray-light": $gray-light,
+  "gray-dark":  $gray-dark,
+
+  "light":      $white,
+  "dark":       $black
+);
+$theme-colors: map-merge($theme-colors, $custom-colors);
+
+// 黑框
+$border-color: $black;
+
+$link-color:   $black;
+
+//spacer
+$custom-spacers: (
+  m1: -1px, //minus
+  m2: -2px,
+  m8: -8px,
+  p1: 1px, //plus
+  p2: 2px,
+  0: 0,
+  1: $spacer * .25,
+  2: $spacer * .5,
+  3: $spacer * .75,
+  4: $spacer,
+  5: $spacer * 1.25,
+  6: $spacer * 1.5,
+  7: $spacer * 1.75,
+  8: $spacer * 2,
+  9: $spacer * 2.25,
+  10: $spacer * 2.5,
+  11: $spacer * 2.75,
+  12: $spacer * 3,
+  13: $spacer * 3.25,
+  14: $spacer * 3.5,
+  15: $spacer * 3.75,
+  16: $spacer * 4,
+  17: $spacer * 4.25,
+  18: $spacer * 4.5,
+  19: $spacer * 4.75,
+  20: $spacer * 5,
+  21: $spacer * 5.25,
+  22: $spacer * 5.5,
+  23: $spacer * 5.75,
+  24: $spacer * 6,
+  25: $spacer * 6.25,
+  26: $spacer * 6.5,
+  27: $spacer * 6.75,
+  28: $spacer * 7,
+  29: $spacer * 7.25,
+  30: $spacer * 7.5,
+  31: $spacer * 7.75,
+  32: $spacer * 8
+);
+$spacers: map-merge($spacers , $custom-spacers);
+
+$custom-font-sizes: (
+  1: $h1-fz, //48px
+  2: $h2-fz, //32px
+  3: $h4-fz, //24px
+  4: $h6-fz, //20px
+  5: $h7-fz, //18px
+  6: $h8-fz, //16px
+  7: $h9-fz, //14px
+);
+
+$font-sizes: map-merge($font-sizes , $custom-font-sizes);
+
+@mixin pc {
+  @media(min-width: map-get($grid-breakpoints, "lg")){
+      @content
+  }
+};
+@mixin pad {
+  @media(min-width: map-get($grid-breakpoints, "md")){
+      @content
+  }
+};

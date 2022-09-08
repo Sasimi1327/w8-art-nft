@@ -1,0 +1,42 @@
+<nav class="navbar navbar-expand-lg navbar-light p-0 pb-p2 pb-lg-0 mb-0 mb-lg-10">
+  <div class="container position-relative">
+    <h1 class="navbar-brand py-4 py-lg-8 flex-grow-1 p-0"><a class="logo" href="./">ART NFT</a></h1>
+
+    <!-- position-absolute position-lg-relative right-0 zindex-0 w-100 -->
+    <form class="search-form d-flex align-items-center border-left-lg col-lg-4 " role="search">
+
+      <!-- return botton -->
+      <button class="return-btn px-3 py-4 border-0 w-40-px flex-grow-1 d-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSearch">
+        <i class="fa-solid fa-angle-left"></i>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSearch">
+        <input class="search form-control d-none d-lg-block bg-gray-light border-0 my-4 my-lg-10 ml-lg-12 p-0 pl-4" type="search" placeholder="搜尋作品名稱、藝術家名稱">
+      </div>
+
+      <!-- search botton -->
+      <button class="search-btn px-3 mx-lg-0 pl-lg-6 pr-lg-12 py-4 py-lg-10 border-0 w-40-px flex-grow-1 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSearch">
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </button>
+    </form>
+
+    <button class="burger-btn navbar-toggler collapsed py-4 px-3 border-0 w-40-px" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+
+    <div class="burger-menu collapse navbar-collapse flex-grow-0" id="navbarSupportedContent">
+      <ul class="navbar-nav text-center mb-6 mb-lg-0">
+        <li class="nav-item">
+          <a class="py-6 py-lg-10 px-lg-12 fw-bold border-bottom border-bottom-lg-0 border-left-lg fz-5 fz-lg-6" href="./search.html">探索</a>
+        </li>
+        <li class="nav-item">
+          <a class="py-6 py-lg-10 px-lg-12 fw-bold border-left-lg fz-5 fz-lg-6" href="#">市值</a>
+        </li>
+        <li class="nav-item">
+          <a class="link-wallet py-3 fw-normal border bg-primary text-light d-block d-lg-none fz-5" href="#myWallet" role="button" data-bs-toggle="modal">連結錢包</a>
+          <a class="py-lg-10 pl-lg-12 fw-bold border-left-lg d-none d-lg-block" href="#myWallet" role="button" data-bs-toggle="modal"><i class="fa-solid fa-wallet"></i></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>

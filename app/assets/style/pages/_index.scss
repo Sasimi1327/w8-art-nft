@@ -165,9 +165,17 @@
   height: 16px;
 }
 
-.wallet-grp.active {
-  border-color: $primary;
-  .wallet-chk {
-    display: block;
+.wallet {
+  &-grp.active {
+    border-color: $primary;
+    .wallet-chk {
+      display: block;
+    }
+  }
+  &-link {
+    width: 100%;
+    @include pc {
+      width: auto;
+    }
   }
 }

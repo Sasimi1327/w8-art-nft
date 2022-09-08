@@ -13,7 +13,7 @@
     <%- include('./partials/footer'); %>
 
     <div class="modal fade" id="myWallet" tabindex="-1">
-      <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
         <div class="modal-content bg-light text-center">
           <div class="d-flex justify-content-center py-4 px-3 mb-6 border-bottom">
             <h5 class="modal-title fz-4 flex-grow-1">連結你的錢包</h5>
@@ -22,7 +22,7 @@
 
           <div class="modal-body">
             <form class="form">
-              <div class="container d-flex flex-column justify-content-between justify-content-lg-start">
+              <div class="container">
                 <div class="row">
                   <div class="col-lg-6 mb-2">
                     <a class="wallet-grp p-4 d-flex justify-content-between border">
@@ -79,11 +79,15 @@
                     </a>
                   </div>
                 </div>
-                <div class="my-lg-6">
-                  <button class="btn btn-primary text-light border">連結錢包</button>
-                </div>
+                <!-- <div class="my-lg-6">
+                  <button class="wallet-link btn btn-primary text-light border">連結錢包</button>
+                </div> -->
               </div>
+  
             </form>
+            <div class="mx-m16 mx-lg-4 mb-m16 mb-lg-4 my-lg-6 mt-32 mt-lg-6">
+              <button class="wallet-link btn btn-primary text-light border py-3 py-lg-2">連結錢包</button>
+            </div>
           </div>
         </div>
       </div>

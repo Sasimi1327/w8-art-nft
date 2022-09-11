@@ -85,7 +85,7 @@ $(document).ready(function () {
   $(".masonry").on("shown.bs.tab", masonryInit);
 }); //輪播
 
-var swiper = new Swiper(".mySwiper", {
+var indexSwiper = new Swiper(".mySwiper", {
   centeredSlides: true,
   loop: true,
   speed: 500,
@@ -108,6 +108,34 @@ var swiper = new Swiper(".mySwiper", {
     },
     992: {
       slidesPerView: 3.25
+    } // 1280: {
+    //   slidesPerView: 3.75,
+    // },
+
+  }
+});
+var othersSwiper = new Swiper(".othersSwiper", {
+  loop: true,
+  speed: 500,
+  slidesPerView: 2,
+  spaceBetween: 24,
+  autoplay: {
+    disableOnInteraction: false,
+    delay: 3000
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true
+  },
+  breakpoints: {
+    // 640: {
+    //   slidesPerView: 2.5,
+    // },
+    768: {
+      slidesPerView: 2
+    },
+    992: {
+      slidesPerView: 4
     } // 1280: {
     //   slidesPerView: 3.75,
     // },

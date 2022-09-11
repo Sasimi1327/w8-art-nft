@@ -165,6 +165,15 @@ $utilities: map-merge(
 );
 
 $utilities: map-merge(
+  $utilities, (
+    "width": map-merge(
+      map-get($utilities, "width"),
+      ( responsive: true),
+    ),
+  )
+);
+
+$utilities: map-merge(
   $utilities,
   (
     "width": map-merge(

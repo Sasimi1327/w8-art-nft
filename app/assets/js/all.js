@@ -6,7 +6,6 @@
 //   columnWidth: ".grid-sizer",
 //   percentPosition: true,
 // });
-
 let masonryInit = function () {
   console.log("masonryInit trigger...");
   $("#gallery").imagesLoaded(function () {
@@ -28,9 +27,25 @@ function checkMenuClose(pMatchMedia) {
   if (pMatchMedia.matches) {
     console.log("大於991");
     $("#navbarSearch").collapse("hide");
+
+    $(".collapseBtn").removeClass("collapsed");
+    $(".collapseBtn")
+      .closest(".row")
+      .find(".fa-solid")
+      .removeClass("fa-plus")
+      .addClass("fa-minus");
+    $(".collapsePlace").addClass("show");
   } else {
     console.log("小於991");
     $("#navbarSearch").collapse("hide");
+
+    $(".collapseBtn").addClass("collapsed");
+    $(".collapseBtn")
+      .closest(".row")
+      .find(".fa-solid")
+      .removeClass("fa-minus")
+      .addClass("fa-plus");
+    $(".collapsePlace").removeClass("show");
   }
 }
 
@@ -42,6 +57,24 @@ $(document).ready(function () {
     } else {
       //open
       $(this).find(".fa-solid").removeClass("fa-bars").addClass("fa-xmark");
+    }
+  });
+
+  $(".collapseBtn").on("click", function (e) {
+    if ($(this).hasClass("collapsed")) {
+      // close
+      $(this)
+        .closest(".row")
+        .find(".fa-solid")
+        .removeClass("fa-minus")
+        .addClass("fa-plus");
+    } else {
+      //open
+      $(this)
+        .closest(".row")
+        .find(".fa-solid")
+        .removeClass("fa-plus")
+        .addClass("fa-minus");
     }
   });
 

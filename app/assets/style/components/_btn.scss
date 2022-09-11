@@ -39,6 +39,37 @@
 // class: btn btn-primary 
 // 確認、出價、連結錢包
 
+// style 4 
+.btn-triangle2::after {
+  content:"";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+  border-left: 32px solid transparent;
+  border-bottom: 32px solid $primary;
+}
+.btn-triangle2:hover::after{
+  border-bottom: 32px solid $dark;
+}
+.btn-triangle2.collapsed::after {
+  content:"";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+  border-left: 32px solid transparent;
+  border-bottom: 32px solid $dark;
+}
+.btn-triangle2.collapsed:hover::after{
+  border-bottom: 32px solid $primary;
+}
+
+
 .card-button {
   display: none;
   margin-bottom: -1px;

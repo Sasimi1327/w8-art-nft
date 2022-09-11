@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>藝術品市值</title>
+
+<!-- font-awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+
+<!-- 輪播swiper -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+
+<link rel="stylesheet" href="./assets/style/all.css">
+
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light p-0 pb-p2 pb-lg-0 mb-0 mb-lg-10">
+  <div class="container position-relative">
+    <h1 class="navbar-brand py-4 py-lg-8 flex-grow-1 p-0"><a class="logo" href="./">ART NFT</a></h1>
+
+    <!-- position-absolute position-lg-relative right-0 zindex-0 w-100 -->
+    <form class="search-form d-flex align-items-center border-left-lg col-lg-4 " role="search">
+
+      <!-- return botton -->
+      <button class="return-btn px-3 py-4 border-0 w-40-px flex-grow-1 d-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSearch">
+        <i class="fa-solid fa-angle-left"></i>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSearch">
+        <input class="search form-control d-none d-lg-block bg-gray-light border-0 my-4 my-lg-10 ml-lg-12 p-0 pl-4" type="search" placeholder="搜尋作品名稱、藝術家名稱">
+      </div>
+
+      <!-- search botton -->
+      <button class="search-btn px-3 mx-lg-0 pl-lg-6 pr-lg-12 py-4 py-lg-10 border-0 w-40-px flex-grow-1 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSearch">
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </button>
+    </form>
+
+    <button class="burger-btn navbar-toggler collapsed py-4 px-3 border-0 w-40-px" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+
+    <div class="burger-menu collapse navbar-collapse flex-grow-0" id="navbarSupportedContent">
+      <ul class="navbar-nav text-center mb-6 mb-lg-0">
+        <li class="nav-item">
+          <a class="py-6 py-lg-10 px-lg-12 fw-bold border-bottom border-bottom-lg-0 border-left-lg fz-5 fz-lg-6" href="./search.html">探索</a>
+        </li>
+        <li class="nav-item">
+          <a class="py-6 py-lg-10 px-lg-12 fw-bold border-left-lg fz-5 fz-lg-6" href="./market-capitalisation.html">市值</a>
+        </li>
+        <li class="nav-item">
+          <a class="link-wallet py-3 fw-normal border bg-primary text-light d-block d-lg-none fz-5" href="#myWallet" role="button" data-bs-toggle="modal">連結錢包</a>
+          <a class="py-lg-10 pl-lg-12 fw-bold border-left-lg d-none d-lg-block" href="#myWallet" role="button" data-bs-toggle="modal"><i class="fa-solid fa-wallet"></i></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    
+<div class="container mt-6 mt-lg-10 mb-10 mb-lg-20">
+  <h2 class="fz-2 lh-46 fz-lg-1 lh-lg-70 fw-bold mb-4 mb-lg-6 text-center">市價排行榜</h2>
+  <h4 class="fz-6 mb-8 mb-lg-12 text-center">NFT系列藝術作品排行榜！全球注目指標</h4>
+
+  <div class="row border mb-m1">
+    <div class="col-lg-6 position-relative border-bottom mb-m1">
+      <a class="collapseBtn btn-triangle2 collapsed d-lg-none position-absolute right-0 bottom-0" data-bs-toggle="collapse" role="button" data-bs-target="#collapseArt1"></a>
+      <i class="fa-solid fa-minus text-light icon-10 position-absolute bottom-right-8-px"></i>
+      <div class="d-flex">
+        <span class="fz-3 lh-1 py-6 px-2 px-lg-4 border-right">1</span>
+        <div class="d-flex justify-content-between align-items-center flex-grow-1 py-4 px-2 pl-lg-4 pr-lg-6">
+          <div class="d-flex align-items-center">
+            <img class="avatar-icon-48 rounded-circle mr-2 mr-lg-4" src="./assets/images/art13.jpg" alt="avatar artwork">
+            <span class="fz-6 lh-base">追求者送我的花</span>
+          </div>
+          <span class="fz-4 lh-32 d-inline-block"><i class="fa-brands fa-ethereum mr-2"></i>1,774.19</span>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-6">
+      <div class="collapsePlace collapse show" id="collapseArt1">
+        <div class="row align-items-center text-center text-lg-end g-0 px-4 px-lg-0 pt-4 pt-lg-0" >
+          <div class="col-4 col-lg-auto flex-lg-grow-1 mb-4 mb-lg-0">
+            <p class="fz-7 lh-32 d-lg-none mb-2">24h%</p>
+            <span class="fz-4 lh-32 py-lg-6 pr-lg-6 d-inline-block text-secondary">+220.49%</span>
+          </div>
+          <div class="col-4 col-lg-auto flex-lg-grow-1 mb-4 mb-lg-0">
+            <p class="fz-7 lh-32 d-lg-none mb-2">7d%</p>
+            <span class="fz-4 lh-32 py-lg-6 pr-lg-6 d-inline-block text-primary">-2.43%</span>
+          </div>
+          <div class="col-4 col-lg-auto flex-lg-grow-1 mb-4 mb-lg-0">
+            <p class="fz-7 lh-32 d-lg-none mb-2">地板價</p>
+            <span class="fz-4 lh-32 py-lg-6 pr-lg-6 d-inline-block"><i class="fa-brands fa-ethereum mr-2"></i>2.90</span>
+          </div>
+          <div class="col-4 col-lg-auto flex-lg-grow-1 offset-2 offset-lg-0 mb-4 mb-lg-0">
+            <p class="fz-7 lh-32 d-lg-none mb-2">擁有者</p>
+            <span class="fz-4 lh-32 py-lg-6 pr-lg-6 d-inline-block">32.1K</span>
+          </div>
+          <div class="col-4 col-lg-auto flex-lg-grow-1 mb-4 mb-lg-0">
+            <p class="fz-7 lh-32 d-lg-none mb-2">作品數量</p>
+            <span class="fz-4 lh-32 py-lg-6 pr-lg-6 d-inline-block">1000</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row border mb-m1">
+    <div class="col-lg-6 position-relative border-bottom mb-m1">
+      <a class="collapseBtn btn-triangle2 collapsed d-lg-none position-absolute right-0 bottom-0" data-bs-toggle="collapse" role="button" data-bs-target="#collapseArt2"></a>
+      <i class="fa-solid fa-minus text-light icon-10 position-absolute bottom-right-8-px"></i>
+      <div class="d-flex">
+        <span class="fz-3 lh-1 py-6 px-2 px-lg-4 border-right">2</span>
+        <div class="d-flex justify-content-between align-items-center flex-grow-1 py-4 px-2 pl-lg-4 pr-lg-6">
+          <div class="d-flex align-items-center">
+            <img class="avatar-icon-48 rounded-circle mr-2 mr-lg-4" src="./assets/images/art06.jpg" alt="avatar artwork">
+            <span class="fz-6 lh-base">夏天的時候</span>
+          </div>
+          <span class="fz-4 lh-32 d-inline-block"><i class="fa-brands fa-ethereum mr-2"></i>1,524.89</span>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-6">
+      <div class="collapsePlace collapse show" id="collapseArt2">
+        <div class="row align-items-center text-center text-lg-end g-0 px-4 px-lg-0 pt-4 pt-lg-0" >
+          <div class="col-4 col-lg-auto flex-lg-grow-1 mb-4 mb-lg-0">
+            <p class="fz-7 lh-32 d-lg-none mb-2">24h%</p>
+            <span class="fz-4 lh-32 py-lg-6 pr-lg-6 d-inline-block text-secondary">+80.49%</span>
+          </div>
+          <div class="col-4 col-lg-auto flex-lg-grow-1 mb-4 mb-lg-0">
+            <p class="fz-7 lh-32 d-lg-none mb-2">7d%</p>
+            <span class="fz-4 lh-32 py-lg-6 pr-lg-6 d-inline-block text-primary">-2.43%</span>
+          </div>
+          <div class="col-4 col-lg-auto flex-lg-grow-1 mb-4 mb-lg-0">
+            <p class="fz-7 lh-32 d-lg-none mb-2">地板價</p>
+            <span class="fz-4 lh-32 py-lg-6 pr-lg-6 d-inline-block"><i class="fa-brands fa-ethereum mr-2"></i>90.23</span>
+          </div>
+          <div class="col-4 col-lg-auto flex-lg-grow-1 offset-2 offset-lg-0 mb-4 mb-lg-0">
+            <p class="fz-7 lh-32 d-lg-none mb-2">擁有者</p>
+            <span class="fz-4 lh-32 py-lg-6 pr-lg-6 d-inline-block">32.1K</span>
+          </div>
+          <div class="col-4 col-lg-auto flex-lg-grow-1 mb-4 mb-lg-0">
+            <p class="fz-7 lh-32 d-lg-none mb-2">作品數量</p>
+            <span class="fz-4 lh-32 py-lg-6 pr-lg-6 d-inline-block">1000</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row border mb-m1">
+    <div class="col-lg-6 position-relative border-bottom mb-m1">
+      <a class="collapseBtn btn-triangle2 collapsed d-lg-none position-absolute right-0 bottom-0" data-bs-toggle="collapse" role="button" data-bs-target="#collapseArt3"></a>
+      <i class="fa-solid fa-minus text-light icon-10 position-absolute bottom-right-8-px"></i>
+      <div class="d-flex">
+        <span class="fz-3 lh-1 py-6 px-2 px-lg-4 border-right">3</span>
+        <div class="d-flex justify-content-between align-items-center flex-grow-1 py-4 px-2 pl-lg-4 pr-lg-6">
+          <div class="d-flex align-items-center">
+            <img class="avatar-icon-48 rounded-circle mr-2 mr-lg-4" src="./assets/images/art02.jpg" alt="avatar artwork">
+            <span class="fz-6 lh-base">海洋波度</span>
+          </div>
+          <span class="fz-4 lh-32 d-inline-block"><i class="fa-brands fa-ethereum mr-2"></i>1,400.59</span>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-6">
+      <div class="collapsePlace collapse show" id="collapseArt3">
+        <div class="row align-items-center text-center text-lg-end g-0 px-4 px-lg-0 pt-4 pt-lg-0" >
+          <div class="col-4 col-lg-auto flex-lg-grow-1 mb-4 mb-lg-0">
+            <p class="fz-7 lh-32 d-lg-none mb-2">24h%</p>
+            <span class="fz-4 lh-32 py-lg-6 pr-lg-6 d-inline-block text-primary">-3.92%</span>
+          </div>
+          <div class="col-4 col-lg-auto flex-lg-grow-1 mb-4 mb-lg-0">
+            <p class="fz-7 lh-32 d-lg-none mb-2">7d%</p>
+            <span class="fz-4 lh-32 py-lg-6 pr-lg-6 d-inline-block text-primary">-13.43%</span>
+          </div>
+          <div class="col-4 col-lg-auto flex-lg-grow-1 mb-4 mb-lg-0">
+            <p class="fz-7 lh-32 d-lg-none mb-2">地板價</p>
+            <span class="fz-4 lh-32 py-lg-6 pr-lg-6 d-inline-block"><i class="fa-brands fa-ethereum mr-2"></i>2.90</span>
+          </div>
+          <div class="col-4 col-lg-auto flex-lg-grow-1 offset-2 offset-lg-0 mb-4 mb-lg-0">
+            <p class="fz-7 lh-32 d-lg-none mb-2">擁有者</p>
+            <span class="fz-4 lh-32 py-lg-6 pr-lg-6 d-inline-block">32.1K</span>
+          </div>
+          <div class="col-4 col-lg-auto flex-lg-grow-1 mb-4 mb-lg-0">
+            <p class="fz-7 lh-32 d-lg-none mb-2">作品數量</p>
+            <span class="fz-4 lh-32 py-lg-6 pr-lg-6 d-inline-block">1000</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row border mb-m1">
+    <div class="col-lg-6 position-relative border-bottom mb-m1">
+      <a class="collapseBtn btn-triangle2 collapsed d-lg-none position-absolute right-0 bottom-0" data-bs-toggle="collapse" role="button" data-bs-target="#collapseArt4"></a>
+      <i class="fa-solid fa-minus text-light icon-10 position-absolute bottom-right-8-px"></i>
+      <div class="d-flex">
+        <span class="fz-3 lh-1 py-6 px-2 px-lg-4 border-right">4</span>
+        <div class="d-flex justify-content-between align-items-center flex-grow-1 py-4 px-2 pl-lg-4 pr-lg-6">
+          <div class="d-flex align-items-center">
+            <img class="avatar-icon-48 rounded-circle mr-2 mr-lg-4" src="./assets/images/art03.jpg" alt="avatar artwork">
+            <span class="fz-6 lh-base">賴床真的很不好</span>
+          </div>
+          <span class="fz-4 lh-32 d-inline-block"><i class="fa-brands fa-ethereum mr-2"></i>1,224.88</span>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-6">
+      <div class="collapsePlace collapse show" id="collapseArt4">
+        <div class="row align-items-center text-center text-lg-end g-0 px-4 px-lg-0 pt-4 pt-lg-0" >
+          <div class="col-4 col-lg-auto flex-lg-grow-1 mb-4 mb-lg-0">
+            <p class="fz-7 lh-32 d-lg-none mb-2">24h%</p>
+            <span class="fz-4 lh-32 py-lg-6 pr-lg-6 d-inline-block text-primary">-9.23%</span>
+          </div>
+          <div class="col-4 col-lg-auto flex-lg-grow-1 mb-4 mb-lg-0">
+            <p class="fz-7 lh-32 d-lg-none mb-2">7d%</p>
+            <span class="fz-4 lh-32 py-lg-6 pr-lg-6 d-inline-block text-primary">-20.43%</span>
+          </div>
+          <div class="col-4 col-lg-auto flex-lg-grow-1 mb-4 mb-lg-0">
+            <p class="fz-7 lh-32 d-lg-none mb-2">地板價</p>
+            <span class="fz-4 lh-32 py-lg-6 pr-lg-6 d-inline-block"><i class="fa-brands fa-ethereum mr-2"></i>2.90</span>
+          </div>
+          <div class="col-4 col-lg-auto flex-lg-grow-1 offset-2 offset-lg-0 mb-4 mb-lg-0">
+            <p class="fz-7 lh-32 d-lg-none mb-2">擁有者</p>
+            <span class="fz-4 lh-32 py-lg-6 pr-lg-6 d-inline-block">32.1K</span>
+          </div>
+          <div class="col-4 col-lg-auto flex-lg-grow-1 mb-4 mb-lg-0">
+            <p class="fz-7 lh-32 d-lg-none mb-2">作品數量</p>
+            <span class="fz-4 lh-32 py-lg-6 pr-lg-6 d-inline-block">1000</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row border mb-m1">
+    <div class="col-lg-6 position-relative border-bottom mb-m1">
+      <a class="collapseBtn btn-triangle2 collapsed d-lg-none position-absolute right-0 bottom-0" data-bs-toggle="collapse" role="button" data-bs-target="#collapseArt5"></a>
+      <i class="fa-solid fa-minus text-light icon-10 position-absolute bottom-right-8-px"></i>
+      <div class="d-flex">
+        <span class="fz-3 lh-1 py-6 px-2 px-lg-4 border-right">5</span>
+        <div class="d-flex justify-content-between align-items-center flex-grow-1 py-4 px-2 pl-lg-4 pr-lg-6">
+          <div class="d-flex align-items-center">
+            <img class="avatar-icon-48 rounded-circle mr-2 mr-lg-4" src="./assets/images/art01.jpg" alt="avatar artwork">
+            <span class="fz-6 lh-base">瞳孔:流動的脈絡</span>
+          </div>
+          <span class="fz-4 lh-32 d-inline-block"><i class="fa-brands fa-ethereum mr-2"></i>1,021.09</span>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-6">
+      <div class="collapsePlace collapse show" id="collapseArt5">
+        <div class="row align-items-center text-center text-lg-end g-0 px-4 px-lg-0 pt-4 pt-lg-0" >
+          <div class="col-4 col-lg-auto flex-lg-grow-1 mb-4 mb-lg-0">
+            <p class="fz-7 lh-32 d-lg-none mb-2">24h%</p>
+            <span class="fz-4 lh-32 py-lg-6 pr-lg-6 d-inline-block text-secondary">+83.49%</span>
+          </div>
+          <div class="col-4 col-lg-auto flex-lg-grow-1 mb-4 mb-lg-0">
+            <p class="fz-7 lh-32 d-lg-none mb-2">7d%</p>
+            <span class="fz-4 lh-32 py-lg-6 pr-lg-6 d-inline-block text-primary">-1.43%</span>
+          </div>
+          <div class="col-4 col-lg-auto flex-lg-grow-1 mb-4 mb-lg-0">
+            <p class="fz-7 lh-32 d-lg-none mb-2">地板價</p>
+            <span class="fz-4 lh-32 py-lg-6 pr-lg-6 d-inline-block"><i class="fa-brands fa-ethereum mr-2"></i>2.90</span>
+          </div>
+          <div class="col-4 col-lg-auto flex-lg-grow-1 offset-2 offset-lg-0 mb-4 mb-lg-0">
+            <p class="fz-7 lh-32 d-lg-none mb-2">擁有者</p>
+            <span class="fz-4 lh-32 py-lg-6 pr-lg-6 d-inline-block">32.1K</span>
+          </div>
+          <div class="col-4 col-lg-auto flex-lg-grow-1 mb-4 mb-lg-0">
+            <p class="fz-7 lh-32 d-lg-none mb-2">作品數量</p>
+            <span class="fz-4 lh-32 py-lg-6 pr-lg-6 d-inline-block">1000</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row border mb-m1">
+    <div class="col-lg-6 position-relative border-bottom mb-m1">
+      <a class="collapseBtn btn-triangle2 collapsed d-lg-none position-absolute right-0 bottom-0" data-bs-toggle="collapse" role="button" data-bs-target="#collapseArt6"></a>
+      <i class="fa-solid fa-minus text-light icon-10 position-absolute bottom-right-8-px"></i>
+      <div class="d-flex">
+        <span class="fz-3 lh-1 py-6 px-2 px-lg-4 border-right">6</span>
+        <div class="d-flex justify-content-between align-items-center flex-grow-1 py-4 px-2 pl-lg-4 pr-lg-6">
+          <div class="d-flex align-items-center">
+            <img class="avatar-icon-48 rounded-circle mr-2 mr-lg-4" src="./assets/images/art12.jpg" alt="avatar artwork">
+            <span class="fz-6 lh-base">哭泣的時候</span>
+          </div>
+          <span class="fz-4 lh-32 d-inline-block"><i class="fa-brands fa-ethereum mr-2"></i>921.42</span>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-6">
+      <div class="collapsePlace collapse show" id="collapseArt6">
+        <div class="row align-items-center text-center text-lg-end g-0 px-4 px-lg-0 pt-4 pt-lg-0" >
+          <div class="col-4 col-lg-auto flex-lg-grow-1 mb-4 mb-lg-0">
+            <p class="fz-7 lh-32 d-lg-none mb-2">24h%</p>
+            <span class="fz-4 lh-32 py-lg-6 pr-lg-6 d-inline-block text-primary">-9.43%</span>
+          </div>
+          <div class="col-4 col-lg-auto flex-lg-grow-1 mb-4 mb-lg-0">
+            <p class="fz-7 lh-32 d-lg-none mb-2">7d%</p>
+            <span class="fz-4 lh-32 py-lg-6 pr-lg-6 d-inline-block text-secondary">+183.49%</span>
+          </div>
+          <div class="col-4 col-lg-auto flex-lg-grow-1 mb-4 mb-lg-0">
+            <p class="fz-7 lh-32 d-lg-none mb-2">地板價</p>
+            <span class="fz-4 lh-32 py-lg-6 pr-lg-6 d-inline-block"><i class="fa-brands fa-ethereum mr-2"></i>2.90</span>
+          </div>
+          <div class="col-4 col-lg-auto flex-lg-grow-1 offset-2 offset-lg-0 mb-4 mb-lg-0">
+            <p class="fz-7 lh-32 d-lg-none mb-2">擁有者</p>
+            <span class="fz-4 lh-32 py-lg-6 pr-lg-6 d-inline-block">32.1K</span>
+          </div>
+          <div class="col-4 col-lg-auto flex-lg-grow-1 mb-4 mb-lg-0">
+            <p class="fz-7 lh-32 d-lg-none mb-2">作品數量</p>
+            <span class="fz-4 lh-32 py-lg-6 pr-lg-6 d-inline-block">1000</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row border mb-m1">
+    <div class="col-lg-6 position-relative border-bottom mb-m1">
+      <a class="collapseBtn btn-triangle2 collapsed d-lg-none position-absolute right-0 bottom-0" data-bs-toggle="collapse" role="button" data-bs-target="#collapseArt7"></a>
+      <i class="fa-solid fa-minus text-light icon-10 position-absolute bottom-right-8-px"></i>
+      <div class="d-flex">
+        <span class="fz-3 lh-1 py-6 px-2 px-lg-4 border-right">7</span>
+        <div class="d-flex justify-content-between align-items-center flex-grow-1 py-4 px-2 pl-lg-4 pr-lg-6">
+          <div class="d-flex align-items-center">
+            <img class="avatar-icon-48 rounded-circle mr-2 mr-lg-4" src="./assets/images/art14.jpg" alt="avatar artwork">
+            <span class="fz-6 lh-base">破碎的菠蘿麵包</span>
+          </div>
+          <span class="fz-4 lh-32 d-inline-block"><i class="fa-brands fa-ethereum mr-2"></i>888.88</span>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-6">
+      <div class="collapsePlace collapse show" id="collapseArt7">
+        <div class="row align-items-center text-center text-lg-end g-0 px-4 px-lg-0 pt-4 pt-lg-0" >
+          <div class="col-4 col-lg-auto flex-lg-grow-1 mb-4 mb-lg-0">
+            <p class="fz-7 lh-32 d-lg-none mb-2">24h%</p>
+            <span class="fz-4 lh-32 py-lg-6 pr-lg-6 d-inline-block text-secondary">+20.49%</span>
+          </div>
+          <div class="col-4 col-lg-auto flex-lg-grow-1 mb-4 mb-lg-0">
+            <p class="fz-7 lh-32 d-lg-none mb-2">7d%</p>
+            <span class="fz-4 lh-32 py-lg-6 pr-lg-6 d-inline-block text-primary">-0.43%</span>
+          </div>
+          <div class="col-4 col-lg-auto flex-lg-grow-1 mb-4 mb-lg-0">
+            <p class="fz-7 lh-32 d-lg-none mb-2">地板價</p>
+            <span class="fz-4 lh-32 py-lg-6 pr-lg-6 d-inline-block"><i class="fa-brands fa-ethereum mr-2"></i>2.90</span>
+          </div>
+          <div class="col-4 col-lg-auto flex-lg-grow-1 offset-2 offset-lg-0 mb-4 mb-lg-0">
+            <p class="fz-7 lh-32 d-lg-none mb-2">擁有者</p>
+            <span class="fz-4 lh-32 py-lg-6 pr-lg-6 d-inline-block">32.1K</span>
+          </div>
+          <div class="col-4 col-lg-auto flex-lg-grow-1 mb-4 mb-lg-0">
+            <p class="fz-7 lh-32 d-lg-none mb-2">作品數量</p>
+            <span class="fz-4 lh-32 py-lg-6 pr-lg-6 d-inline-block">1000</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row border mb-m1">
+    <div class="col-lg-6 position-relative border-bottom mb-m1">
+      <a class="collapseBtn btn-triangle2 collapsed d-lg-none position-absolute right-0 bottom-0" data-bs-toggle="collapse" role="button" data-bs-target="#collapseArt8"></a>
+      <i class="fa-solid fa-minus text-light icon-10 position-absolute bottom-right-8-px"></i>
+      <div class="d-flex">
+        <span class="fz-3 lh-1 py-6 px-2 px-lg-4 border-right">8</span>
+        <div class="d-flex justify-content-between align-items-center flex-grow-1 py-4 px-2 pl-lg-4 pr-lg-6">
+          <div class="d-flex align-items-center">
+            <img class="avatar-icon-48 rounded-circle mr-2 mr-lg-4" src="./assets/images/art08.jpg" alt="avatar artwork">
+            <span class="fz-6 lh-base">人生中的貓咪們</span>
+          </div>
+          <span class="fz-4 lh-32 d-inline-block"><i class="fa-brands fa-ethereum mr-2"></i>770.23</span>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-6">
+      <div class="collapsePlace collapse show" id="collapseArt8">
+        <div class="row align-items-center text-center text-lg-end g-0 px-4 px-lg-0 pt-4 pt-lg-0" >
+          <div class="col-4 col-lg-auto flex-lg-grow-1 mb-4 mb-lg-0">
+            <p class="fz-7 lh-32 d-lg-none mb-2">24h%</p>
+            <span class="fz-4 lh-32 py-lg-6 pr-lg-6 d-inline-block text-secondary">+13.49%</span>
+          </div>
+          <div class="col-4 col-lg-auto flex-lg-grow-1 mb-4 mb-lg-0">
+            <p class="fz-7 lh-32 d-lg-none mb-2">7d%</p>
+            <span class="fz-4 lh-32 py-lg-6 pr-lg-6 d-inline-block text-secondary">+50.23</span>
+          </div>
+          <div class="col-4 col-lg-auto flex-lg-grow-1 mb-4 mb-lg-0">
+            <p class="fz-7 lh-32 d-lg-none mb-2">地板價</p>
+            <span class="fz-4 lh-32 py-lg-6 pr-lg-6 d-inline-block"><i class="fa-brands fa-ethereum mr-2"></i>2.90</span>
+          </div>
+          <div class="col-4 col-lg-auto flex-lg-grow-1 offset-2 offset-lg-0 mb-4 mb-lg-0">
+            <p class="fz-7 lh-32 d-lg-none mb-2">擁有者</p>
+            <span class="fz-4 lh-32 py-lg-6 pr-lg-6 d-inline-block">32.1K</span>
+          </div>
+          <div class="col-4 col-lg-auto flex-lg-grow-1 mb-4 mb-lg-0">
+            <p class="fz-7 lh-32 d-lg-none mb-2">作品數量</p>
+            <span class="fz-4 lh-32 py-lg-6 pr-lg-6 d-inline-block">1000</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row border mb-m1">
+    <div class="col-lg-6 position-relative border-bottom mb-m1">
+      <a class="collapseBtn btn-triangle2 collapsed d-lg-none position-absolute right-0 bottom-0" data-bs-toggle="collapse" role="button" data-bs-target="#collapseArt9"></a>
+      <i class="fa-solid fa-minus text-light icon-10 position-absolute bottom-right-8-px"></i>
+      <div class="d-flex">
+        <span class="fz-3 lh-1 py-6 px-2 px-lg-4 border-right">9</span>
+        <div class="d-flex justify-content-between align-items-center flex-grow-1 py-4 px-2 pl-lg-4 pr-lg-6">
+          <div class="d-flex align-items-center">
+            <img class="avatar-icon-48 rounded-circle mr-2 mr-lg-4" src="./assets/images/art28.jpg" alt="avatar artwork">
+            <span class="fz-6 lh-base">髒兮兮的家</span>
+          </div>
+          <span class="fz-4 lh-32 d-inline-block"><i class="fa-brands fa-ethereum mr-2"></i>502.31</span>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-6">
+      <div class="collapsePlace collapse show" id="collapseArt9">
+        <div class="row align-items-center text-center text-lg-end g-0 px-4 px-lg-0 pt-4 pt-lg-0" >
+          <div class="col-4 col-lg-auto flex-lg-grow-1 mb-4 mb-lg-0">
+            <p class="fz-7 lh-32 d-lg-none mb-2">24h%</p>
+            <span class="fz-4 lh-32 py-lg-6 pr-lg-6 d-inline-block text-secondary">+13.49%</span>
+          </div>
+          <div class="col-4 col-lg-auto flex-lg-grow-1 mb-4 mb-lg-0">
+            <p class="fz-7 lh-32 d-lg-none mb-2">7d%</p>
+            <span class="fz-4 lh-32 py-lg-6 pr-lg-6 d-inline-block text-secondary">+50.23</span>
+          </div>
+          <div class="col-4 col-lg-auto flex-lg-grow-1 mb-4 mb-lg-0">
+            <p class="fz-7 lh-32 d-lg-none mb-2">地板價</p>
+            <span class="fz-4 lh-32 py-lg-6 pr-lg-6 d-inline-block"><i class="fa-brands fa-ethereum mr-2"></i>2.90</span>
+          </div>
+          <div class="col-4 col-lg-auto flex-lg-grow-1 offset-2 offset-lg-0 mb-4 mb-lg-0">
+            <p class="fz-7 lh-32 d-lg-none mb-2">擁有者</p>
+            <span class="fz-4 lh-32 py-lg-6 pr-lg-6 d-inline-block">32.1K</span>
+          </div>
+          <div class="col-4 col-lg-auto flex-lg-grow-1 mb-4 mb-lg-0">
+            <p class="fz-7 lh-32 d-lg-none mb-2">作品數量</p>
+            <span class="fz-4 lh-32 py-lg-6 pr-lg-6 d-inline-block">1000</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row border">
+    <div class="col-lg-6 position-relative border-bottom mb-m1">
+      <a class="collapseBtn btn-triangle2 collapsed d-lg-none position-absolute right-0 bottom-0" data-bs-toggle="collapse" role="button" data-bs-target="#collapseArt10"></a>
+      <i class="fa-solid fa-minus text-light icon-10 position-absolute bottom-right-8-px"></i>
+      <div class="d-flex">
+        <span class="fz-3 lh-1 py-6 px-2 px-lg-4 border-right">10</span>
+        <div class="d-flex justify-content-between align-items-center flex-grow-1 py-4 px-2 pl-lg-4 pr-lg-6">
+          <div class="d-flex align-items-center">
+            <img class="avatar-icon-48 rounded-circle mr-2 mr-lg-4" src="./assets/images/art16.jpg" alt="avatar artwork">
+            <span class="fz-6 lh-base">細胞小將</span>
+          </div>
+          <span class="fz-4 lh-32 d-inline-block"><i class="fa-brands fa-ethereum mr-2"></i>420.20</span>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-6">
+      <div class="collapsePlace collapse show" id="collapseArt10">
+        <div class="row align-items-center text-center text-lg-end g-0 px-4 px-lg-0 pt-4 pt-lg-0" >
+          <div class="col-4 col-lg-auto flex-lg-grow-1 mb-4 mb-lg-0">
+            <p class="fz-7 lh-32 d-lg-none mb-2">24h%</p>
+            <span class="fz-4 lh-32 py-lg-6 pr-lg-6 d-inline-block text-secondary">+54.49%</span>
+          </div>
+          <div class="col-4 col-lg-auto flex-lg-grow-1 mb-4 mb-lg-0">
+            <p class="fz-7 lh-32 d-lg-none mb-2">7d%</p>
+            <span class="fz-4 lh-32 py-lg-6 pr-lg-6 d-inline-block text-primary">-12.43%</span>
+          </div>
+          <div class="col-4 col-lg-auto flex-lg-grow-1 mb-4 mb-lg-0">
+            <p class="fz-7 lh-32 d-lg-none mb-2">地板價</p>
+            <span class="fz-4 lh-32 py-lg-6 pr-lg-6 d-inline-block"><i class="fa-brands fa-ethereum mr-2"></i>2.90</span>
+          </div>
+          <div class="col-4 col-lg-auto flex-lg-grow-1 offset-2 offset-lg-0 mb-4 mb-lg-0">
+            <p class="fz-7 lh-32 d-lg-none mb-2">擁有者</p>
+            <span class="fz-4 lh-32 py-lg-6 pr-lg-6 d-inline-block">32.1K</span>
+          </div>
+          <div class="col-4 col-lg-auto flex-lg-grow-1 mb-4 mb-lg-0">
+            <p class="fz-7 lh-32 d-lg-none mb-2">作品數量</p>
+            <span class="fz-4 lh-32 py-lg-6 pr-lg-6 d-inline-block">1000</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+    <div class="container-fluid border-top border-1 px-0">
+  <div class="container-fluid mt-2 border-top border-4 px-0">
+    <footer class="text-center font-noto my-6">
+      © ART NFT. All Rights Reserved
+    </footer>
+  </div>
+</div>
+
+
+    <div class="modal fade" id="myWallet" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content bg-light text-center">
+          <div class="d-flex justify-content-center py-4 px-3 mb-6 border-bottom">
+            <h5 class="modal-title fz-4 flex-grow-1">連結你的錢包</h5>
+            <button type="button" class="btn-close d-lg-none" data-bs-dismiss="modal"></button>
+          </div>
+
+          <div class="modal-body">
+            <form class="form">
+              <div class="container">
+                <div class="row">
+                  <div class="col-lg-6 mb-2">
+                    <a class="wallet-grp p-4 d-flex justify-content-between border">
+                      <div>
+                        <img class="icon-16 mr-4 my-1 d-inline-block align-middle" src="./assets/images/logo/connect01.png" alt="connect01.png">
+                        <span class="fz-6 lh-17 my-1">MetaMask</span>
+                      </div>
+                      <i class="wallet-chk fa-solid fa-check align-middle my-1 text-primary d-none"></i>
+                    </a>
+                  </div>
+                  <div class="col-lg-6 mb-2">
+                    <a class="wallet-grp p-4 d-flex justify-content-between border">
+                      <div>
+                        <img class="icon-16 mr-4 my-1 d-inline-block align-middle" src="./assets/images/logo/connect02.png" alt="connect02.png">
+                        <span class="fz-6 lh-17 my-1">Coinbase Wallet</span>
+                      </div>
+                      <i class="wallet-chk fa-solid fa-check align-middle my-1 text-primary d-none"></i>
+                    </a>
+                  </div>
+                  <div class="col-lg-6 mb-2">
+                    <a class="wallet-grp p-4 d-flex justify-content-between border">
+                      <div>
+                        <img class="icon-16 mr-4 my-1 d-inline-block align-middle" src="./assets/images/logo/connect03.png" alt="connect03.png">
+                        <span class="fz-6 lh-17 my-1">WalletConnect</span>
+                      </div>
+                      <i class="wallet-chk fa-solid fa-check align-middle my-1 text-primary d-none"></i>
+                    </a>
+                  </div>
+                  <div class="col-lg-6 mb-2">
+                    <a class="wallet-grp p-4 d-flex justify-content-between border">
+                      <div>
+                        <img class="icon-16 mr-4 my-1 d-inline-block align-middle" src="./assets/images/logo/connect04.png" alt="connect04.png">
+                        <span class="fz-6 lh-17 my-1">Phantom</span>
+                      </div>
+                      <i class="wallet-chk fa-solid fa-check align-middle my-1 text-primary d-none"></i>
+                    </a>
+                  </div>
+                  <div class="col-lg-6 mb-2">
+                    <a class="wallet-grp p-4 d-flex justify-content-between border">
+                      <div>
+                        <img class="icon-16 mr-4 my-1 d-inline-block align-middle" src="./assets/images/logo/connect05.png" alt="connect05.png">
+                        <span class="fz-6 lh-17 my-1">Glow</span>
+                      </div>
+                      <i class="wallet-chk fa-solid fa-check align-middle my-1 text-primary d-none"></i>
+                    </a>
+                  </div>
+                  <div class="col-lg-6 mb-2">
+                    <a class="wallet-grp p-4 d-flex justify-content-between border">
+                      <div>
+                        <img class="icon-16 mr-4 my-1 d-inline-block align-middle" src="./assets/images/logo/connect06.png" alt="connect06.png">
+                        <span class="fz-6 lh-17 my-1">Fortmatic</span>
+                      </div>
+                      <i class="wallet-chk fa-solid fa-check align-middle my-1 text-primary d-none"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+  
+            </form>
+            <div class="mx-m16 mx-lg-4 mb-m16 mb-lg-4 my-lg-6 mt-32 mt-lg-6">
+              <button class="wallet-link btn btn-primary text-light border py-3 py-lg-2">連結錢包</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 輪播swiper -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+    <script src="./assets/js/vendors.js"></script>
+
+    <!-- 瀑布流套件 -->
+    <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"></script>
+    <!-- <script src="./assets/js/masonry.pkgd.min.js"></script> -->
+
+    <!-- images loaded 套件(圖片都載入之後，才會呈現 masonry) -->
+    <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
+    <!-- <script src="./assets/js/imagesloaded.pkgd.min.js"></script> -->
+
+    <script src="./assets/js/all.js"></script>
+  </body>
+
+</html>

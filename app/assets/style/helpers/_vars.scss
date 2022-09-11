@@ -22,6 +22,21 @@ $container-padding-x: $grid-gutter-width * .5 !default;
 
 $enable-grid-classes:         true !default;
 
+// 手風琴 Accordion
+$accordion-color:  #000; //body 的字體色
+$accordion-bg:  #fff; //body 的背景色
+$accordion-padding-y:  1.5rem;
+$accordion-padding-x:  1.5rem;
+$accordion-button-active-bg:  #fff; //heading 的背景色
+$accordion-button-active-color:  #000; //heading 的字體色
+$accordion-border-color:  #000; //邊框顏色
+$accordion-icon-color:  #000; //icon收合顏色
+$accordion-icon-active-color:  #000; //icon開啟顏色
+
+$table-th-font-weight:  400; //tables 標題的 font-weight
+$table-cell-vertical-align:  center;
+
+
 $font-size-base:              1rem !default;
 $h1-fz:                $font-size-base * 3 !default; //48px
 $h2-fz:                $font-size-base * 2 !default; //32px

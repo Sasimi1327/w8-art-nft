@@ -1,0 +1,260 @@
+---
+title: 藝術品介紹頁
+layout: ./app/layout.ejs
+engine: ejs
+current: artwork-introduction
+---
+
+<div class="container">
+  <div class="row">
+
+    <div class="col-lg-6">
+      <div class="w-100">
+        <div class="w-100 h-0 pb-100p overflow-hidden position-relative">
+          <img class="img-fluid position-absolute translate-1-4-y" src="./assets/images/art21.jpg" alt="portfolio-art21"></div>
+      </div>
+    </div>
+
+    <div class="col-lg-6 pb-lg-6">
+      <div class="card h-100">
+        <div class="card-body p-4 pb-6 px-lg-10 pb-lg-8 flex-lg-grow-0 border-bottom">
+          <div class="d-flex flex-column align-items-start flex-lg-row-reverse align-items-lg-center mb-4">
+
+            <div class="d-flex align-items-center">
+              <img class="rounded-circle avatar-icon" src="./assets/images/artist01.jpg" alt="avatar seller">
+              <span class="fz-6 lh-17 d-inline-block ml-2">Michael</span>
+            </div>
+            <h2 class="fz-1 lh-base flex-lg-grow-1">兩情相悅</h2>
+
+          </div>
+          <span class="fz-7 text-gray-dark align-bottom">最高出價</span>
+          <div class="d-flex justify-content-between align-items-end">
+            <div class="d-flex justify-content-center align-items-center">
+              <div class="mr-2">
+                <img class="img-fluid rounded-circle avatar-icon object-cover object-top fz-2" src="./assets/images/user01.jpg" alt="avatar buyer">
+              </div>
+              <i class="fa-solid fa-arrow-right mr-2"></i>
+              <span class="fz-6 lh-17 d-inline-block">0.044Eth</span>
+            </div>
+            <a href="#" class="btn btn-primary text-light fz-5 lh-base border">出價</a>
+          </div>
+        </div>
+        <div class="card-body bg-light py-6 px-4 py-lg-8 px-lg-10 flex-lg-grow-1">
+          <div class="d-flex flex-column">
+            <p class="mb-4">3/14情人節外面剛好有兩隻鳥，也在過情人節。</p>
+            <p class="mb-4">而且其中一隻竟然有梳油頭，不知道是不是有用定型液，他們感情真好，出門還會特別打扮，看著看著不禁思考，我怎麼會變這樣？</p>
+            <p>好羨慕啊，我也要有這樣兩情相悅的另一半。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row" data-masonry='{"percentPosition": true }'>
+    <div class="col-lg-6 mb-6">
+      <div class="accordion" id="attributes">
+        <div class="accordion-item">
+          <h4 class="accordion-header" id="headingAttributes">
+            <button class="accordion-button fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAttributes">屬性</button>
+          </h4>
+          <div id="collapseAttributes" class="accordion-collapse collapse show" data-bs-parent="#attributes">
+            <div class="accordion-body">
+              <div class="d-flex justify-content-between pb-2 mb-2 border-bottom border-gray-light">
+                <span class="fz-6">品種</span>
+                <span class="fz-6 text-gray-dark">青藍金剛鸚鵡</span>
+              </div>
+              <div class="d-flex justify-content-between pb-2 mb-2 border-bottom border-gray-light">
+                <span class="fz-6">鳥的數量</span>
+                <span class="fz-6 text-gray-dark">2隻</span>
+              </div>
+              <div class="d-flex justify-content-between pb-2 mb-2 border-bottom border-gray-light">
+                <span class="fz-6">是否有花草</span>
+                <span class="fz-6 text-gray-dark">是</span>
+              </div>
+              <div class="d-flex justify-content-between pb-2">
+                <span class="fz-6">鳥的顏色</span>
+                <span class="fz-6 text-gray-dark">藍色</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-6 mb-6">
+      <div class="accordion" id="bid">
+        <div class="accordion-item">
+          <h4 class="accordion-header" id="headingBid">
+            <button class="accordion-button fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseBid">出價</button>
+          </h4>
+          <div id="collapseBid" class="accordion-collapse collapse show" data-bs-parent="#bid">
+            <div class="accordion-body">
+              <div class="row g-0">
+                <div class="col-6 bg-gray-light py-2 px-4 mb-2">
+                  <p class="fz-7 lh-base text-center text-lg-start">價格</p>
+                </div>
+                <div class="col-6 bg-gray-light py-2 px-4 mb-2">
+                  <p class="fz-7 lh-base text-center text-lg-start">期限</p>
+                </div>
+
+                <div class="col-6 pl-lg-4 pb-2 mb-2 border-bottom border-gray-light">
+                  
+                  <div class="d-flex align-items-center">
+                    <div class="mr-2">
+                      <img class="img-fluid rounded-circle avatar-icon object-cover object-top fz-2" src="./assets/images/artist03.jpg" alt="avatar buyer">
+                    </div>
+                    <i class="fa-solid fa-arrow-right mr-2"></i>
+                    <span class="fz-6 lh-17 d-inline-block">0.044Eth</span>
+                  </div>
+
+                </div>
+                <div class="col-6 pl-lg-4 pb-2 mb-2 border-bottom border-gray-light">
+                  <p class="fz-6 lh-base text-end text-lg-start text-gray-dark py-1">3個月後</p>
+                </div>
+                <div class="col-6 pl-lg-4 pb-2 mb-2 border-bottom border-gray-light">
+
+                  <div class="d-flex align-items-center">
+                    <div class="mr-2">
+                      <img class="img-fluid rounded-circle avatar-icon object-cover object-top fz-2" src="./assets/images/user02.jpg" alt="avatar buyer">
+                    </div>
+                    <i class="fa-solid fa-arrow-right mr-2"></i>
+                    <span class="fz-6 lh-17 d-inline-block">0.054Eth</span>
+                  </div>
+
+                </div>
+                <div class="col-6 pl-lg-4 pb-2 mb-2 border-bottom border-gray-light">
+                  <p class="fz-6 lh-base text-end text-lg-start text-gray-dark py-1">1個月後</p>
+                </div>
+                <div class="col-6 pl-lg-4 pb-2 mb-2 border-bottom border-gray-light">
+
+                  <div class="d-flex align-items-center">
+                    <div class="mr-2">
+                      <img class="img-fluid rounded-circle avatar-icon object-cover object-top fz-2" src="./assets/images/user03.jpg" alt="avatar buyer">
+                    </div>
+                    <i class="fa-solid fa-arrow-right mr-2"></i>
+                    <span class="fz-6 lh-17 d-inline-block">0.044Eth</span>
+                  </div>
+
+                </div>
+                <div class="col-6 pl-lg-4 pb-2 mb-2 border-bottom border-gray-light">
+                  <p class="fz-6 lh-base text-end text-lg-start text-gray-dark py-1">2週後</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-6 mb-6">
+      <div class="accordion" id="info">
+        <div class="accordion-item">
+          <h4 class="accordion-header" id="headingInfo">
+            <button class="accordion-button fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseInfo">基本資訊</button>
+          </h4>
+          <div id="collapseInfo" class="accordion-collapse collapse show" data-bs-parent="#info">
+            <div class="accordion-body">
+              <div class="d-flex justify-content-between pb-2 mb-2 border-bottom border-gray-light">
+                <span class="fz-6">擁有者</span>
+                <span class="fz-6 text-gray-dark">0xa543x…1283</span>
+              </div>
+              <div class="d-flex justify-content-between pb-2 mb-2 border-bottom border-gray-light">
+                <span class="fz-6">代幣ID</span>
+                <span class="fz-6 text-gray-dark">#1234</span>
+              </div>
+              <div class="d-flex justify-content-between pb-2 mb-2 border-bottom border-gray-light">
+                <span class="fz-6">合約地址</span>
+                <span class="fz-6 text-gray-dark">青藍金剛鸚鵡</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-6  mb-0">
+      <div class="accordion" id="tradeRecord">
+        <div class="accordion-item">
+          <h4 class="accordion-header" id="headingTradeRecord">
+            <button class="accordion-button fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTradeRecord">交易歷史</button>
+          </h4>
+          <div id="collapseTradeRecord" class="accordion-collapse collapse show" data-bs-parent="#tradeRecord">
+            <div class="accordion-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col fw-normal">事件</th>
+                    <th scope="col fw-normal">價格</th>
+                    <th scope="col fw-normal">從</th>
+                    <th scope="col fw-normal">時間</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row fw-normal">上架</th>
+                    <td>2nb</td>
+                    <td>
+                      <div class="d-flex align-items-center">
+
+                        <div class="mr-2">
+                          <img class="img-fluid rounded-circle avatar-icon object-cover object-top fz-2" src="./assets/images/artist02.jpg" alt="avatar buyer">
+                        </div>
+                        <span class="fz-6 lh-17 d-none d-lg-block">Antony WU</span>
+                      </div>
+                    </td>
+                    <td class="text-gray-dark">14小時前</td>
+                  </tr>
+                  <tr>
+                    <th scope="row fw-normal">出價</th>
+                    <td>2nb</td>
+                    <td>
+                      <div class="d-flex align-items-center">
+                        <div class="mr-2">
+                          <img class="img-fluid rounded-circle avatar-icon object-cover object-top fz-2" src="./assets/images/artist01.jpg" alt="avatar buyer">
+                        </div>
+                        <span class="fz-6 lh-17 d-none d-lg-block">Antony WU</span>
+                      </div>
+                    </td>
+                    <td class="text-gray-dark">2天前</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container my-10 mb-lg-20">
+  <div class="d-flex justify-content-between align-items-end border-bottom">
+    <h2 class="fz-1 lh-50 mb-2 mb-lg-4">Other<span class="fz-4 ml-lg-4 d-none d-lg-inline-block">其餘作品</span></h2>
+    <div class="div">
+      <a href="./search.html" class="btn btn-border btn-triangle fz-5 lh-19 mb-lg-m1">MORE</a>
+    </div>
+  </div>
+
+  <div class="swiper othersSwiper mt-6 mt-lg-12">
+  
+    <div class="swiper-wrapper">
+
+        <div class="swiper-slide">
+            <img class="otherSwiper-item-height img-fluid object-cover object-center" src="./assets/images/art22.jpg" alt="art22">
+        </div>
+        <div class="swiper-slide">
+            <img class="otherSwiper-item-height img-fluid object-cover object-center" src="./assets/images/art27.jpg" alt="art27">
+        </div>
+        <div class="swiper-slide">
+            <img class="otherSwiper-item-height img-fluid object-cover object-center" src="./assets/images/art20.jpg" alt="art20">
+        </div>
+        <div class="swiper-slide">
+            <img class="otherSwiper-item-height img-fluid object-cover object-center" src="./assets/images/art23.jpg" alt="art23">
+        </div>
+
+
+      </div>
+      <!-- pagination -->
+      <div class="swiper-pagination mt-6 mt-lg-12"></div>
+
+  </div>
+
+</div>

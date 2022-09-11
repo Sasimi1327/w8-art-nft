@@ -125,7 +125,7 @@ $(document).ready(function () {
 });
 
 //輪播
-const swiper = new Swiper(".mySwiper", {
+const indexSwiper = new Swiper(".mySwiper", {
   centeredSlides: true,
   loop: true,
   speed: 500,
@@ -148,6 +148,35 @@ const swiper = new Swiper(".mySwiper", {
     },
     992: {
       slidesPerView: 3.25,
+    },
+    // 1280: {
+    //   slidesPerView: 3.75,
+    // },
+  },
+});
+
+const othersSwiper = new Swiper(".othersSwiper", {
+  loop: true,
+  speed: 500,
+  slidesPerView: 2,
+  spaceBetween: 24,
+  autoplay: {
+    disableOnInteraction: false,
+    delay: 3000,
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  breakpoints: {
+    // 640: {
+    //   slidesPerView: 2.5,
+    // },
+    768: {
+      slidesPerView: 2,
+    },
+    992: {
+      slidesPerView: 4,
     },
     // 1280: {
     //   slidesPerView: 3.75,

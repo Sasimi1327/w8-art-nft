@@ -197,6 +197,22 @@ $utilities: map-merge(
     )
   )
 );
+$utilities: map-merge(
+  $utilities,
+  (
+    "height": map-merge(
+      map-get($utilities, "height"),
+      (
+        values: map-merge(
+          map-get(map-get($utilities, "height"), "values"),
+          (
+            0: 0
+          )
+        )
+      )
+    )
+  )
+);
 
 // line-height(倍數)
 $utilities: map-merge(

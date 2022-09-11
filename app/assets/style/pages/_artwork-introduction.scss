@@ -1,0 +1,20 @@
+.pb-100p {
+  padding-bottom: 100%;
+}
+
+.avatar-icon {
+  width: 32px;
+  height: 32px;
+}
+
+.translate-1-4-y {
+  transform: translateY(-25%);
+}
+
+.otherSwiper-item-height {
+  height: 230px;
+  @include pc {
+    height: 327px;
+  }
+}
+

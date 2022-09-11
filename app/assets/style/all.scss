@@ -29,6 +29,8 @@
 @import "../../../node_modules/bootstrap/scss/popover";
 @import "../../../node_modules/bootstrap/scss/forms";
 @import "../../../node_modules/bootstrap/scss/transitions";
+@import "../../../node_modules/bootstrap/scss/accordion";
+@import "../../../node_modules/bootstrap/scss/tables";
 
 // utilites
 @import "../../../node_modules/bootstrap/scss/utilities";
@@ -47,3 +49,5 @@
 @import './components/masonry';
 @import './pages/index';
 @import './pages/artist-introduction';
+@import './pages/artwork-introduction';
+

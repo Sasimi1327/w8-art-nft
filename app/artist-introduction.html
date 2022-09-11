@@ -1,0 +1,345 @@
+---
+title: 藝術家介紹頁
+layout: ./app/layout.ejs
+engine: ejs
+current: artist-introduction
+---
+
+<div class="container mt-6 mt-lg-10 mb-10 mb-lg-20">
+  <div class="row">
+    <div class="col-lg-9">
+      <div class="card">
+        <div class="g-0 d-flex align-items-center">
+          <div class="w-45 h-100">
+            <img class="object-cover object-center" src="./assets/images/artist01.jpg" alt="artist01">
+          </div>
+          <div class="w-55">
+            <div class="card-body py-6 px-4 p-lg-6 pb-lg-8">
+              <div class="d-flex">
+                <h4 class="card-title flex-grow-1 fz-2 lh-34 fz-lg-1 lh-lg-50">Michael</h4>
+                <ul class="d-flex align-items-center ml-lg-6">
+                  <li class="mx-1"><a href="#"><i class="fa-brands fa-discord fz-6"></i></a></li>
+                  <li class="mx-1"><a href="#"><i class="fa-brands fa-facebook-f fz-6"></i></a></li>
+                  <li class="mx-1"><a href="#"><i class="fa-solid fa-globe fz-6"></i></a></li>
+                  <li class="mx-1"><a href="#"><i class="fa-brands fa-twitter fz-6"></i></a></li>
+                </ul>
+              </div>
+              <h5 class="card-subtitle mt-2 mt-lg-4">0x3ya666…88ef</h5>
+              <p class="card-text mt-6 mt-lg-4">Michael自小在山林長大，能夠與花草樹木大自然進行靈體溝通，創作題材常見大山、大水、花草與樹木，從日常生活出發，擁有個⼈獨樹⼀格的創作風格，作品觸及靈魂深處、探索未知宇宙，透過與大自然的溝通，探討著存在的本質。​</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-3 mt-4 mt-lg-0">
+      <ul class="flex-column h-100 bg-light border">
+        <li class="h-25 border-bottom">
+          <div class="d-flex justify-content-between py-4 px-6">
+            <span class="fz-6 lh-lg">販售中</span>
+            <span class="fz-2 lh-32">168</span>
+          </div>
+        </li>
+        <li class="h-25 border-bottom">
+          <div class="d-flex justify-content-between py-4 px-6">
+            <span class="fz-6 lh-lg">地板價格</span>
+            <span class="fz-2 lh-32">0.6<span>ETH</span></span>
+          </div>
+        </li>
+        <li class="h-25 border-bottom">
+          <div class="d-flex justify-content-between py-4 px-6">
+            <span class="fz-6 lh-lg">7 日成交</span>
+            <span class="fz-2 lh-32">8.8<span>ETH</span></span>
+          </div>
+        </li>
+        <li class="h-25">
+          <div class="d-flex justify-content-between py-4 px-6">
+            <span class="fz-6 lh-lg">30 日成交</span>
+            <span class="fz-2 lh-32">23.1<span class="fz-3">ETH</span></span>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+
+
+<div class="container">
+  <ul class="nav nav-tabs" id="myTab" role="tablist">
+    <li class="nav-item" role="presentation">
+      <button class="nav-link active fz-2 lh-34 fz-lg-1 lh-lg-50 text-nowrap py-lg-4 px-lg-12" id="artwork-tab" data-bs-toggle="tab" data-bs-target="#artwork" type="button" role="tab">Art Works<span class="d-none d-lg-block fz-4 lh-26 fw-bold d-inline-block align-bottom">系列作品</span></button>
+    </li>
+    <li class="nav-item d-flex" role="presentation">
+      <button class="nav-link masonry fz-2 lh-34 fz-lg-1 lh-lg-50 text-nowrap py-lg-4 px-lg-12" id="collection-tab" data-bs-toggle="tab" data-bs-target="#collect" type="button" role="tab">Collection<span class="d-none d-lg-block fz-4 lh-26 fw-bold d-inline-block">收藏品</span></button>
+    </li>
+
+  </ul>
+  <div class="tab-content" id="myTabContent">
+    <div class="tab-pane fade show active" id="artwork" role="tabpanel">
+
+      <div class="card position-relative mt-6 mt-lg-10 py-8 px-4 pt-lg-12 pb-270-px-lg px-lg-28 mb-4 mb-lg-22">
+        <div class="position-absolute top-0 left-0 card-top-left"></div>
+        <div class="position-absolute top-0 right-0 card-top-right"></div>
+        <h3 class="fz-3 lh-base mb-4 fw-bold">追求者送我的花</h3>
+        <div class="d-lg-flex justify-content-lg-between align-items-lg-end">
+
+          <p class="fz-6 mb-6 mb-lg-0">我又沒有特別喜歡花，為什麼不給我現金就好，擺在那也不知道要幹嘛，只好畫起來看有沒有人要買，阿不然如果真的喜歡我，把這些都買回去八。</p>
+  
+          <ul class="row mb-4 mb-lg-0 position-lg-absolute top-100 translate-3-4-y-lg artwork-pos">
+  
+            <li class="col-lg-3 mx-lg-m8 flex-grow-1">
+              <div class="border border-10">
+                <img class="card-img-top img-fluid object-cover object-center h-263-px-lg" src="./assets/images/art31.jpg" alt="art31">
+              </div>
+            </li>
+            <li class="col-lg-3 mx-lg-m8 flex-grow-1 d-none d-lg-block">
+              <div class="border border-10">
+                <img class="card-img-top img-fluid object-cover object-center h-263-px-lg" src="./assets/images/art30.jpg" alt="art30">
+              </div>
+            </li>
+            <li class="col-lg-3 mx-lg-m8 flex-grow-1 d-none d-lg-block">
+              <div class="border border-10">
+                <img class="card-img-top img-fluid object-cover object-center h-263-px-lg" src="./assets/images/art14.jpg" alt="art14">
+              </div>
+            </li>
+            <li class="col-lg-3 mx-lg-m8 flex-grow-1 d-none d-lg-block">
+              <div class="border border-10">
+                <img class="card-img-top img-fluid object-cover object-center h-263-px-lg" src="./assets/images/art29.jpg" alt="art29">
+              </div>
+            </li>
+  
+          </ul>
+          <div class="text-center ml-lg-22">
+            <button class="btn btn-light btn-triangle">MORE</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="card position-relative py-8 px-4 pt-lg-12 pb-270-px-lg px-lg-28 mb-10 mb-lg-32">
+        <div class="position-absolute top-0 left-0 card-top-left"></div>
+        <div class="position-absolute top-0 right-0 card-top-right"></div>
+        <h3 class="fz-3 lh-base mb-4 fw-bold">我家窗前的鳥</h3>
+        <div class="d-lg-flex justify-content-lg-between align-items-lg-end">
+
+          <p class="fz-6 mb-6 mb-lg-0">家門前每天都有不同的小鳥，大多數的小鳥都有特殊能力，特殊能力是什麼我就不說了，希望大家能從作品感受到小鳥的快樂。</p>
+  
+          <ul class="row mb-4 mb-lg-0 position-lg-absolute top-100 translate-3-4-y-lg artwork-pos">
+  
+            <li class="col-lg-3 mx-lg-m8 flex-grow-1">
+              <div class="border border-10">
+                <img class="card-img-top img-fluid object-cover object-center h-263-px-lg" src="./assets/images/art27.jpg" alt="art27">
+              </div>
+            </li>
+            <li class="col-lg-3 mx-lg-m8 flex-grow-1 d-none d-lg-block">
+              <div class="border border-10">
+                <img class="card-img-top img-fluid object-cover object-center h-263-px-lg" src="./assets/images/art20.jpg" alt="art20">
+              </div>
+            </li>
+            <li class="col-lg-3 mx-lg-m8 flex-grow-1 d-none d-lg-block">
+              <div class="border border-10">
+                <img class="card-img-top img-fluid object-cover object-center h-263-px-lg" src="./assets/images/art26.jpg" alt="art26">
+              </div>
+            </li>
+            <li class="col-lg-3 mx-lg-m8 flex-grow-1 d-none d-lg-block">
+              <div class="border border-10">
+                <img class="card-img-top img-fluid object-cover object-center h-263-px-lg" src="./assets/images/art22.jpg" alt="art22">
+              </div>
+            </li>
+  
+          </ul>
+          <div class="text-center ml-lg-22">
+            <button class="btn btn-light btn-triangle">MORE</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="tab-pane fade" id="collect" role="tabpanel">
+      <div class="container mt-6 mb-12 mt-lg-10 mb-lg-20">
+
+        <!-- <div class="row" data-masonry='{"percentPosition": true }'> -->
+        <div class="row" id="gallery">
+
+          <div class="col-6 col-md-3 mb-5 portfolio-item">
+            <div class="border-bottom">
+              <div class="card-artwork position-relative">
+                <img src="./assets/images/art09.jpg" alt="portfolio-art09" class="img-fluid card-img-top p-2 p-lg-4 bg-light object-cover object-center">
+                
+                <div class="artwork-aide d-none p-4 bg-transparent position-absolute top-0 right-0 bottom-0 left-0">
+                  <div class="card h-100 d-flex flex-column justify-content-between p-4 bg-transparent border-light">
+                    <div class="card-body p-0 flex-grow-1">
+                      <p class="card-text mb-2 fz-6 lh-base text-light">唯一想擁有的人，唯一不可以擁有的</p>
+                      <span class="fz-6 lh-17 d-inline-block text-light"><i class="fa-brands fa-ethereum mr-2"></i>300</span>
+                    </div>
+                    <div class="text-end">
+                      <button class="card-link btn btn-light btn-triangle">MORE</button>
+                    </div>
+                  </div>
+                </div>
+      
+              </div>
+              <h4 class="my-4 fw-bold fz-6">區塊戀-他的私生活</h4>
+            </div>
+          </div>
+      
+          <div class="col-6 col-md-3 mb-5 portfolio-item">
+            <div class="border-bottom">
+              <div class="card-artwork position-relative">
+                <img src="./assets/images/art10.jpg" alt="portfolio-art10" class="img-fluid card-img-top p-2 p-lg-4  bg-light object-cover object-center">
+      
+                <div class="artwork-aide d-none p-4 bg-transparent position-absolute top-0 right-0 bottom-0 left-0">
+                  <div class="card h-100 d-flex flex-column justify-content-between p-4 bg-transparent border-light">
+                    <div class="card-body p-0 flex-grow-1">
+                      <p class="card-text mb-2 fz-6 lh-base text-light">唯一想擁有的人，唯一不可以擁有的</p>
+                      <span class="fz-6 lh-17 d-inline-block text-light"><i class="fa-brands fa-ethereum mr-2"></i>300</span>
+                    </div>
+                    <div class="text-end">
+                      <button class="card-link btn btn-light btn-triangle">MORE</button>
+                    </div>
+                  </div>
+                </div>
+      
+              </div>
+              <h4 class="my-4 fw-bold fz-6">夏娃的醜聞</h4>
+            </div>
+          </div>
+      
+          <div class="col-6 col-md-3 mb-5 portfolio-item">
+            <div class="border-bottom"> 
+              <div class="card-artwork position-relative">
+                <img src="./assets/images/art02.jpg" alt="portfolio-art02" class="img-fluid card-img-top p-2 p-lg-4  bg-light object-cover object-center">
+      
+                <div class="artwork-aide d-none p-4 bg-transparent position-absolute top-0 right-0 bottom-0 left-0">
+                  <div class="card h-100 d-flex flex-column justify-content-between p-4 bg-transparent border-light">
+                    <div class="card-body p-0 flex-grow-1">
+                      <p class="card-text mb-2 fz-6 lh-base text-light">唯一想擁有的人，唯一不可以擁有的</p>
+                      <span class="fz-6 lh-17 d-inline-block text-light"><i class="fa-brands fa-ethereum mr-2"></i>300</span>
+                    </div>
+                    <div class="text-end">
+                      <button class="card-link btn btn-light btn-triangle">MORE</button>
+                    </div>
+                  </div>
+                </div>
+      
+              </div>  
+              <h4 class="my-4 fw-bold fz-6">藍色啤酒海</h4>
+            </div>
+          </div>
+      
+          <div class="col-6 col-md-3 mb-5 portfolio-item">
+            <div class="border-bottom">
+              <div class="card-artwork position-relative">
+                <img src="./assets/images/art11.jpg" alt="portfolio-art11" class="img-fluid card-img-top p-2 p-lg-4  bg-light object-cover object-center">
+      
+                <div class="artwork-aide d-none p-4 bg-transparent position-absolute top-0 right-0 bottom-0 left-0">
+                  <div class="card h-100 d-flex flex-column justify-content-between p-4 bg-transparent border-light">
+                    <div class="card-body p-0 flex-grow-1">
+                      <p class="card-text mb-2 fz-6 lh-base text-light">唯一想擁有的人，唯一不可以擁有的</p>
+                      <span class="fz-6 lh-17 d-inline-block text-light"><i class="fa-brands fa-ethereum mr-2"></i>300</span>
+                    </div>
+                    <div class="text-end">
+                      <button class="card-link btn btn-light btn-triangle">MORE</button>
+                    </div>
+                  </div>
+                </div>
+      
+              </div>
+              <h4 class="my-4 fw-bold fz-6">沒有人愛我</h4>
+            </div>
+          </div>
+      
+          <div class="col-6 col-md-3 mb-5 portfolio-item">
+            <div class="border-bottom">
+              <div class="card-artwork position-relative">
+                <img src="./assets/images/art12.jpg" alt="portfolio-art12" class="img-fluid card-img-top p-2 p-lg-4  bg-light object-cover object-center">
+      
+                <div class="artwork-aide d-none p-4 bg-transparent position-absolute top-0 right-0 bottom-0 left-0">
+                  <div class="card h-100 d-flex flex-column justify-content-between p-4 bg-transparent border-light">
+                    <div class="card-body p-0 flex-grow-1">
+                      <p class="card-text mb-2 fz-6 lh-base text-light">唯一想擁有的人，唯一不可以擁有的</p>
+                      <span class="fz-6 lh-17 d-inline-block text-light"><i class="fa-brands fa-ethereum mr-2"></i>300</span>
+                    </div>
+                    <div class="text-end">
+                      <button class="card-link btn btn-light btn-triangle">MORE</button>
+                    </div>
+                  </div>
+                </div>
+      
+              </div>
+              <h4 class="my-4 fw-bold fz-6">不哭不哭眼淚是珍珠</h4>
+            </div>
+          </div>
+      
+          <div class="col-6 col-md-3 mb-5 portfolio-item">
+            <div class="border-bottom">
+              <div class="card-artwork position-relative">
+                <img src="./assets/images/art03.jpg" alt="portfolio-art03" class="img-fluid card-img-top p-2 p-lg-4  bg-light object-cover object-center">
+      
+                <div class="artwork-aide d-none p-4 bg-transparent position-absolute top-0 right-0 bottom-0 left-0">
+                  <div class="card h-100 d-flex flex-column justify-content-between p-4 bg-transparent border-light">
+                    <div class="card-body p-0 flex-grow-1">
+                      <p class="card-text mb-2 fz-6 lh-base text-light">唯一想擁有的人，唯一不可以擁有的</p>
+                      <span class="fz-6 lh-17 d-inline-block text-light"><i class="fa-brands fa-ethereum mr-2"></i>300</span>
+                    </div>
+                    <div class="text-end">
+                      <button class="card-link btn btn-light btn-triangle">MORE</button>
+                    </div>
+                  </div>
+                </div>
+      
+              </div>
+              <h4 class="my-4 fw-bold fz-6">十分鐘就到</h4>
+            </div>
+          </div>
+      
+          <div class="col-6 col-md-3 mb-5 portfolio-item">
+            <div class="border-bottom">
+              <div class="card-artwork position-relative">
+                <img src="./assets/images/art04.jpg" alt="portfolio-art04" class="img-fluid card-img-top p-2 p-lg-4  bg-light object-cover object-center">
+      
+                <div class="artwork-aide d-none p-4 bg-transparent position-absolute top-0 right-0 bottom-0 left-0">
+                  <div class="card h-100 d-flex flex-column justify-content-between p-4 bg-transparent border-light">
+                    <div class="card-body p-0 flex-grow-1">
+                      <p class="card-text mb-2 fz-6 lh-base text-light">唯一想擁有的人，唯一不可以擁有的</p>
+                      <span class="fz-6 lh-17 d-inline-block text-light"><i class="fa-brands fa-ethereum mr-2"></i>300</span>
+                    </div>
+                    <div class="text-end">
+                      <button class="card-link btn btn-light btn-triangle">MORE</button>
+                    </div>
+                  </div>
+                </div>
+      
+              </div>
+              <h4 class="my-4 fw-bold fz-6">我這樣有美嗎</h4>
+            </div>
+          </div>
+      
+          <div class="col-6 col-md-3 mb-5 portfolio-item">
+            <div class="border-bottom">
+              <div class="card-artwork position-relative">
+                <img src="./assets/images/art27.jpg" alt="portfolio-art27" class="img-fluid card-img-top p-2 p-lg-4 bg-light object-cover object-center">
+      
+                <div class="artwork-aide d-none p-4 bg-transparent position-absolute top-0 right-0 bottom-0 left-0">
+                  <div class="card h-100 d-flex flex-column justify-content-between p-4 bg-transparent border-light">
+                    <div class="card-body p-0 flex-grow-1">
+                      <p class="card-text mb-2 fz-6 lh-base text-light">唯一想擁有的人，唯一不可以擁有的</p>
+                      <span class="fz-6 lh-17 d-inline-block text-light"><i class="fa-brands fa-ethereum mr-2"></i>300</span>
+                    </div>
+                    <div class="position-relative text-end">
+                      <button class="card-link btn btn-light btn-triangle">MORE</button>
+                    </div>
+                  </div>
+                </div>
+      
+              </div>
+              <h4 class="my-4 fw-bold fz-6">我真的受傷了</h4>
+            </div>
+          </div>
+      
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

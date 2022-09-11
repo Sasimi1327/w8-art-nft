@@ -1,0 +1,38 @@
+
+.pb-270-px-lg {
+  @include pc {
+    padding-bottom: 270px;
+  }
+}
+
+.h-263-px-lg {
+  @include pc {
+    height: 263px;
+  }
+}
+
+.translate-3-4-y-lg {
+  @include pc {
+    -webkit-transform: translateY(-75%);
+        -ms-transform: translateY(-75%);
+            transform: translateY(-75%);
+  }
+}
+
+.artwork-pos {
+  @include pc {
+    left: 112px;
+    right: 112px;
+  }
+}
+
+.card-top {
+  &-left {
+    border-top: 16px solid $dark;
+    border-right: 16px solid transparent;
+  }
+  &-right {
+    border-top: 16px solid $dark;
+    border-left: 16px solid transparent;
+  }
+}

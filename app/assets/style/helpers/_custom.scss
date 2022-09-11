@@ -16,6 +16,19 @@ $border-color: $black;
 
 $link-color:   $black;
 
+
+// $nav-link-color: $gray-dark;
+// $nav-tabs-link-active-color: $dark;
+// $nav-tabs-border-color: $dark;
+$nav-link-color:                    $gray-dark; //tab 未選到，字體的顏色
+$nav-link-hover-color:              $link-hover-color; //tab 未選到，hover後，字體的顏色
+$nav-tabs-border-color:             $dark; //tab 未選到，邊框的顏色
+$nav-tabs-link-hover-border-color:  $gray-200 $gray-200 $nav-tabs-border-color; //tab 未選到，hover後，邊框的顏色
+
+$nav-tabs-link-active-color:        $dark; //tab 選到，字體的顏色
+$nav-tabs-link-active-bg:           $body-bg; //tab 選到，背景的顏色
+$nav-tabs-link-active-border-color: $dark $dark $nav-tabs-link-active-bg; //tab 選到，邊框的顏色
+
 //spacer
 $custom-spacers: (
   m1: -1px, //minus
@@ -69,6 +82,12 @@ $custom-font-sizes: (
   6: $h8-fz, //16px
   7: $h9-fz, //14px
 );
+
+$custom-widths: (
+  10: 10px
+);
+
+$border-widths: map-merge($border-widths , $custom-widths);
 
 $font-sizes: map-merge($font-sizes , $custom-font-sizes);
 

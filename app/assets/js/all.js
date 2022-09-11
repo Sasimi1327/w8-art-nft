@@ -7,6 +7,15 @@
 //   percentPosition: true,
 // });
 
+let masonryInit = function () {
+  console.log("masonryInit trigger...");
+  $("#gallery").imagesLoaded(function () {
+    $("#gallery").masonry({
+      itemSelector: ".portfolio-item",
+    });
+  });
+};
+
 // 圖片都載入之後，才會呈現 masonry (接著才做 圖片加載)
 // $grid.imagesLoaded().progress(function () {
 //   $grid.masonry("layout");
@@ -110,6 +119,9 @@ $(document).ready(function () {
     $(".wallet-grp").not(this).removeClass("active border-primary border-2");
     $(this).toggleClass("active border-primary border-2");
   });
+
+  // nav-tab時，需reload這個部分的masonry
+  $(".masonry").on("shown.bs.tab", masonryInit);
 });
 
 //輪播

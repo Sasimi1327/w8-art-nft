@@ -177,6 +177,8 @@ $utilities: map-merge(
             10: 10%,
             15: 15%,
             20: 20%,
+            23: 23%,
+            24: 24%,
             30: 30%,
             35: 35%,
             40: 40%,
@@ -231,6 +233,7 @@ $utilities: map-merge(
             "21": $line-height-21px,
             "26": $line-height-26px,
             "32": $line-height-32px,
+            "34": $line-height-34px,
             "40": $line-height-40px,
             "46": $line-height-46px,
             "50": $line-height-50px,
@@ -239,6 +242,14 @@ $utilities: map-merge(
           )
         ),
       ),
+    ),
+  )
+);
+$utilities: map-merge(
+  $utilities, (
+    "line-height": map-merge(
+      map-get($utilities, "line-height"),
+      ( responsive: true),
     ),
   )
 );

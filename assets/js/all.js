@@ -8,10 +8,19 @@
 //   columnWidth: ".grid-sizer",
 //   percentPosition: true,
 // });
-// 圖片都載入之後，才會呈現 masonry (接著才做 圖片加載)
+var masonryInit = function masonryInit() {
+  console.log("masonryInit trigger...");
+  $("#gallery").imagesLoaded(function () {
+    $("#gallery").masonry({
+      itemSelector: ".portfolio-item"
+    });
+  });
+}; // 圖片都載入之後，才會呈現 masonry (接著才做 圖片加載)
 // $grid.imagesLoaded().progress(function () {
 //   $grid.masonry("layout");
 // });
+
+
 var pc = window.matchMedia("(min-width: 991px)");
 pc.addListener(checkMenuClose);
 
@@ -71,7 +80,9 @@ $(document).ready(function () {
   $(".wallet-grp").on("click", function (e) {
     $(".wallet-grp").not(this).removeClass("active border-primary border-2");
     $(this).toggleClass("active border-primary border-2");
-  });
+  }); // nav-tab時，需reload這個部分的masonry
+
+  $(".masonry").on("shown.bs.tab", masonryInit);
 }); //輪播
 
 var swiper = new Swiper(".mySwiper", {

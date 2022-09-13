@@ -104,8 +104,8 @@ var indexSwiper = new Swiper(".mySwiper", {
   centeredSlides: true,
   loop: true,
   speed: 500,
-  slidesPerView: 1.5,
-  spaceBetween: 16,
+  slidesPerView: 1,
+  spaceBetween: 12,
   // autoplay: {
   //   disableOnInteraction: false,
   //   delay: 3000,
@@ -115,14 +115,11 @@ var indexSwiper = new Swiper(".mySwiper", {
     clickable: true
   },
   breakpoints: {
-    // 640: {
-    //   slidesPerView: 2.5,
+    // 768: {
+    //   slidesPerView: 1,
     // },
-    768: {
-      slidesPerView: 1.75
-    },
     992: {
-      slidesPerView: 3.25
+      slidesPerView: 2.25
     } // 1280: {
     //   slidesPerView: 3.75,
     // },

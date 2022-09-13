@@ -44,7 +44,8 @@
       <i class="fa-solid fa-bars"></i>
     </button>
 
-    <div class="burger-menu collapse navbar-collapse flex-grow-0" id="navbarSupportedContent">
+    <!-- 手機選單背景顏色是白色哦~ -->
+    <div class="burger-menu d-none d-lg-block flex-grow-0">
       <ul class="navbar-nav text-center mb-6 mb-lg-0">
         <li class="nav-item">
           <a class="py-6 py-lg-10 px-lg-12 fw-bold border-bottom border-bottom-lg-0 border-left-lg fz-5 fz-lg-6" href="./search.html">探索</a>
@@ -58,8 +59,28 @@
         </li>
       </ul>
     </div>
+
   </div>
+
 </nav>
+    <div class="bg-light">
+      <div class="container">
+        <div class="burger-menu collapse d-block d-lg-none pb-6 pb-lg-0" id="navbarSupportedContent">
+          <ul class="navbar-nav text-center mb-6 mb-lg-0">
+            <li class="nav-item">
+              <a class="py-6 py-lg-10 px-lg-12 fw-bold border-bottom border-bottom-lg-0 border-left-lg fz-5 fz-lg-6" href="./search.html">探索</a>
+            </li>
+            <li class="nav-item">
+              <a class="py-6 py-lg-10 px-lg-12 fw-bold border-left-lg fz-5 fz-lg-6" href="./market-capitalisation.html">市值</a>
+            </li>
+            <li class="nav-item">
+              <a class="link-wallet py-3 fw-normal border bg-primary text-light d-block d-lg-none fz-5" href="#myWallet" role="button" data-bs-toggle="modal">連結錢包</a>
+              <a class="py-lg-10 pl-lg-12 fw-bold border-left-lg d-none d-lg-block" href="#myWallet" role="button" data-bs-toggle="modal"><i class="fa-solid fa-wallet"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
 
     
 <div class="container-lg px-0 px-lg-3 mb-10 mb-lg-20">
@@ -155,14 +176,15 @@
 
     <div class="col-lg-4 mb-4 mb-lg-6">
       <div class="rank-item card d-flex flex-row flex-lg-column">
-        <span class="bg-light border position-lg-absolute top-0 left-0 fz-3 lh-1 fz-lg-2 lh-46 px-4 px-lg-6 py-6 py-lg-2 zindex-1 mt-lg-m1 ml-lg-m1">1</span>
+        <!-- 數字的字型是 Paytone One -->
+        <span class="bg-light border position-lg-absolute top-0 left-0 fz-3 lh-1 fz-lg-2 lh-46 px-4 px-lg-6 py-6 py-lg-2 zindex-1 mt-m1 ml-m1 mb-m1 font-paytone">1</span>
 
-        <div class="card-image position-relative">
+        <div class="card-image position-relative mb-m1 border-right border-right-lg-0 mr-lg-m1">
           <img class="card-img-top img-fluid h-373-px-lg object-cover object-center" src="./assets/images/art04.jpg" alt="portfolio-art04">
           <a href="./artwork-introduction.html" class="card-button btn position-absolute right-0 bottom-0"></a>
         </div>
 
-        <div class=" flex-column flex-grow-1">
+        <div class="d-flex flex-column justify-content-center flex-grow-1">
           <div class="card-body">
             <h4 class="card-title mb-0 fz-5 fw-bold">散步遇到的女人</h4>
           </div>
@@ -178,14 +200,14 @@
 
     <div class="col-lg-4 mb-4 mb-lg-6">
       <div class="rank-item card d-flex flex-row flex-lg-column">
-        <span class="bg-light border position-lg-absolute top-0 left-0 fz-3 lh-1 fz-lg-2 lh-46 px-4 px-lg-6 py-6 py-lg-2 zindex-1 mt-lg-m1 ml-lg-m1">2</span>
+        <span class="bg-light border position-lg-absolute top-0 left-0 fz-3 lh-1 fz-lg-2 lh-46 px-4 px-lg-6 py-6 py-lg-2 zindex-1 mt-m1 ml-m1 mb-m1 font-paytone">2</span>
 
-        <div class="card-image position-relative">
+        <div class="card-image position-relative mb-m1 border-right border-right-lg-0 mr-lg-m1">
           <img class="card-img-top img-fluid h-373-px-lg object-cover object-center" src="./assets/images/art05.jpg" alt="portfolio-art05">
           <a href="./artwork-introduction.html" class="card-button btn position-absolute right-0 bottom-0"></a>
         </div>
 
-        <div class=" flex-column flex-grow-1">
+        <div class="d-flex flex-column justify-content-between flex-grow-1">
           <div class="card-body">
             <h4 class="card-title mb-0 fz-5 fw-bold">爆炸頭的母親</h4>
           </div>
@@ -201,14 +223,14 @@
 
     <div class="col-lg-4 mb-4 mb-lg-6">
       <div class="rank-item card d-flex flex-row flex-lg-column">
-        <span class="bg-light border position-lg-absolute top-0 left-0 fz-3 lh-1 fz-lg-2 lh-46 px-4 px-lg-6 py-6 py-lg-2 zindex-1 mt-lg-m1 ml-lg-m1">3</span>
+        <span class="bg-light border position-lg-absolute top-0 left-0 fz-3 lh-1 fz-lg-2 lh-46 px-4 px-lg-6 py-6 py-lg-2 zindex-1 mt-m1 ml-m1 mb-m1 font-paytone">3</span>
 
-        <div class="card-image position-relative">
+        <div class="card-image position-relative mb-m1 border-right border-right-lg-0 mr-lg-m1">
           <img class="card-img-top img-fluid h-373-px-lg object-cover object-center" src="./assets/images/art06.jpg" alt="portfolio-art06">
           <a href="./artwork-introduction.html" class="card-button btn position-absolute right-0 bottom-0"></a>
         </div>
 
-        <div class=" flex-column flex-grow-1">
+        <div class="d-flex flex-column justify-content-between flex-grow-1">
           <div class="card-body">
             <h4 class="card-title mb-0 fz-5 fw-bold">夏天的時候</h4>
           </div>
@@ -223,15 +245,15 @@
     </div>
 
     <div class="col-lg-4 mb-4">
-      <div class="rank-item card d-flex flex-row flex-lg-column">
-        <span class="bg-light border position-lg-absolute top-0 left-0 fz-3 lh-1 fz-lg-2 lh-46 px-4 px-lg-6 py-6 py-lg-2 zindex-1 mt-lg-m1 ml-lg-m1">4</span>
+      <div class="rank-item card d-flex flex-row">
+        <span class="bg-light border fz-3 lh-1 fz-lg-2 lh-46 px-4 px-lg-6 py-6 py-lg-2 zindex-1 mt-m1 ml-m1 mb-m1 font-paytone">4</span>
 
-        <div class="card-image position-relative">
-          <img class="card-img-top img-fluid h-373-px-lg object-cover object-center" src="./assets/images/art13.jpg" alt="portfolio-art13">
-          <a href="./artwork-introduction.html" class="card-button btn position-absolute right-0 bottom-0"></a>
+        <div class="card-image-sm position-relative mb-m1 border-right mr-m1">
+          <img class="card-img-top img-fluid h-100 object-cover object-center" src="./assets/images/art13.jpg" alt="portfolio-art13">
+          <a href="./artwork-introduction.html" class="card-button-sm position-absolute right-0 bottom-0"></a>
         </div>
 
-        <div class=" flex-column flex-grow-1">
+        <div class="d-flex flex-column justify-content-between flex-grow-1">
           <div class="card-body">
             <h4 class="card-title mb-0 fz-5 fw-bold">追求者送我的花</h4>
           </div>
@@ -246,15 +268,15 @@
     </div>
 
     <div class="col-lg-4 mb-4">
-      <div class="rank-item card d-flex flex-row flex-lg-column">
-        <span class="bg-light border position-lg-absolute top-0 left-0 fz-3 lh-1 fz-lg-2 lh-46 px-4 px-lg-6 py-6 py-lg-2 zindex-1 mt-lg-m1 ml-lg-m1">5</span>
+      <div class="rank-item card d-flex flex-row">
+        <span class="bg-light border fz-3 lh-1 fz-lg-2 lh-46 px-4 px-lg-6 py-6 py-lg-2 zindex-1 mt-m1 ml-m1 mb-m1 font-paytone">5</span>
 
-        <div class="card-image position-relative">
-          <img class="card-img-top img-fluid h-373-px-lg object-cover object-center" src="./assets/images/art07.jpg" alt="portfolio-art07">
-          <a href="./artwork-introduction.html" class="card-button btn position-absolute right-0 bottom-0"></a>
+        <div class="card-image-sm position-relative mb-m1 border-right mr-m1">
+          <img class="card-img-top img-fluid object-cover object-center" src="./assets/images/art07.jpg" alt="portfolio-art07">
+          <a href="./artwork-introduction.html" class="card-button-sm position-absolute right-0 bottom-0"></a>
         </div>
 
-        <div class=" flex-column flex-grow-1">
+        <div class="d-flex flex-column justify-content-between flex-grow-1">
           <div class="card-body">
             <h4 class="card-title mb-0 fz-5 fw-bold">今天釣到的魚</h4>
           </div>
@@ -269,15 +291,15 @@
     </div>
 
     <div class="col-lg-4">
-      <div class="rank-item card d-flex flex-row flex-lg-column">
-        <span class="bg-light border position-lg-absolute top-0 left-0 fz-3 lh-1 fz-lg-2 lh-46 px-4 px-lg-6 py-6 py-lg-2 zindex-1 mt-lg-m1 ml-lg-m1">6</span>
+      <div class="rank-item card d-flex flex-row">
+        <span class="bg-light border fz-3 lh-1 fz-lg-2 lh-46 px-4 px-lg-6 py-6 py-lg-2 zindex-1 mt-m1 ml-m1 mb-m1 font-paytone">6</span>
 
-        <div class="card-image position-relative">
-          <img class="card-img-top img-fluid h-373-px-lg object-cover object-center" src="./assets/images/art08.jpg" alt="portfolio-art08">
-          <a href="./artwork-introduction.html" class="card-button btn position-absolute right-0 bottom-0"></a>
+        <div class="card-image-sm position-relative mb-m1 border-right mr-m1">
+          <img class="card-img-top img-fluid object-cover object-center" src="./assets/images/art08.jpg" alt="portfolio-art08">
+          <a href="./artwork-introduction.html" class="card-button-sm position-absolute right-0 bottom-0"></a>
         </div>
 
-        <div class=" flex-column flex-grow-1">
+        <div class="d-flex flex-column justify-content-between flex-grow-1">
           <div class="card-body">
             <h4 class="card-title mb-0 fz-5 fw-bold">人生中的貓咪們</h4>
           </div>
@@ -294,7 +316,7 @@
   </div>
 </div>
 
-<div class="container mb-10 mb-lg-20">
+<div class="container mb-10 mb-lg-0">
   <div class="d-flex justify-content-between align-items-end border-bottom">
     <h2 class="fz-1 lh-50 mb-2 mb-lg-4">Artist <span class="fz-4 ml-lg-4 d-none d-lg-inline-block">熱門藝術家</span></h2>
     <div class="div">
@@ -309,50 +331,63 @@
       <div class="swiper-wrapper">
   
           <div class="swiper-slide artist-item position-relative">
-            <img class="img-fluid object-cover object-center artist-photo" src="./assets/images/artist01.jpg" alt="artist01">
-            <h3 class="artist-title">Antony Wu</h3>
-            <a href="./artist-introduction.html" class="artist-more btn btn-light btn-triangle">MORE</a>
-            <div class="artist-intro bg-light w-50 p-1">
-              <p>​喜愛大自然，創作題材常見大山、大水、花草與樹木。</p>
+            <div class="position-relative w-100">
+
+              <img class="img-fluid object-cover object-center artist-photo" src="./assets/images/artist01.jpg" alt="artist01">
+              <h3 class="artist-title">Antony Wu</h3>
+              <a href="./artist-introduction.html" class="artist-more btn btn-light btn-triangle">MORE</a>
+            </div>
+            <div class="artist-intro bg-light mt-4">
+              <p class="p-6 p-lg-1">​喜愛大自然，創作題材常見大山、大水、花草與樹木。</p>
             </div>
           </div>
           <div class="swiper-slide artist-item position-relative">
-            <img class="img-fluid object-cover object-center artist-photo" src="./assets/images/artist02.jpg" alt="artist02">
-            <h3 class="artist-title">Bug Lin</h3>
-            <a href="./artist-introduction.html" class="artist-more btn btn-light btn-triangle">MORE</a>
-            <div class="artist-intro bg-light w-50 p-1">
-              <p>​喜愛大自然，創作題材常見大山、大水、花草與樹木。</p>
+            <div class="position-relative">
+
+              <img class="img-fluid object-cover object-center artist-photo" src="./assets/images/artist02.jpg" alt="artist02">
+              <h3 class="artist-title">Bug Lin</h3>
+              <a href="./artist-introduction.html" class="artist-more btn btn-light btn-triangle">MORE</a>
+            </div>
+            <div class="artist-intro bg-light mt-4">
+              <p class="p-6 p-lg-1">​喜愛大自然，創作題材常見大山、大水、花草與樹木。</p>
             </div>
           </div>
           <div class="swiper-slide artist-item position-relative">
-            <img class="img-fluid object-cover object-center artist-photo" src="./assets/images/artist03.jpg" alt="artist03">
-            <h3 class="artist-title">Even Lai</h3>
-            <a href="./artist-introduction.html" class="artist-more btn btn-light btn-triangle">MORE</a>
-            <div class="artist-intro bg-light w-50 p-1">
-              <p>​喜愛大自然，創作題材常見大山、大水、花草與樹木。</p>
+            <div class="position-relative">
+
+              <img class="img-fluid object-cover object-center artist-photo" src="./assets/images/artist03.jpg" alt="artist03">
+              <h3 class="artist-title">Even Lai</h3>
+              <a href="./artist-introduction.html" class="artist-more btn btn-light btn-triangle">MORE</a>
+            </div>
+            <div class="artist-intro bg-light mt-4">
+              <p class="p-6 p-lg-1">​喜愛大自然，創作題材常見大山、大水、花草與樹木。</p>
             </div>
           </div>
           <div class="swiper-slide artist-item position-relative">
-            <img class="img-fluid object-cover object-center artist-photo" src="./assets/images/artist04.jpg" alt="artist04">
-            <h3 class="artist-title">Yui</h3>
-            <a href="./artist-introduction.html" class="artist-more btn btn-light btn-triangle">MORE</a>
-            <div class="artist-intro bg-light w-50 p-1">
-              <p>​喜愛大自然，創作題材常見大山、大水、花草與樹木。</p>
+            <div class="position-relative">
+              <img class="img-fluid object-cover object-center artist-photo" src="./assets/images/artist04.jpg" alt="artist04">
+              <h3 class="artist-title">Yui</h3>
+              <a href="./artist-introduction.html" class="artist-more btn btn-light btn-triangle">MORE</a>
+            </div>
+            <div class="artist-intro bg-light mt-4">
+              <p class="p-6 p-lg-1">​喜愛大自然，創作題材常見大山、大水、花草與樹木。</p>
             </div>
           </div>
           <div class="swiper-slide artist-item position-relative">
-            <img class="img-fluid object-cover object-center artist-photo" src="./assets/images/artist05.jpg" alt="artist05">
-            <h3 class="artist-title">Michael</h3>
-            <a href="./artist-introduction.html" class="artist-more btn btn-light btn-triangle">MORE</a>
-            <div class="artist-intro bg-light w-50 p-1">
-              <p>​喜愛大自然，創作題材常見大山、大水、花草與樹木。</p>
+            <div class="position-relative">
+              <img class="img-fluid object-cover object-center artist-photo" src="./assets/images/artist05.jpg" alt="artist05">
+              <h3 class="artist-title">Michael</h3>
+              <a href="./artist-introduction.html" class="artist-more btn btn-light btn-triangle">MORE</a>
+            </div>
+            <div class="artist-intro bg-light mt-4">
+              <p class="p-6 p-lg-1">​喜愛大自然，創作題材常見大山、大水、花草與樹木。</p>
             </div>
           </div>
   
   
         </div>
         <!-- pagination -->
-        <div class="swiper-pagination mt-6 mt-lg-32"></div>
+        <div class="swiper-pagination mt-6"></div>
   
     </div>
   </div>

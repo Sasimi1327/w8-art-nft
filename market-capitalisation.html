@@ -44,7 +44,8 @@
       <i class="fa-solid fa-bars"></i>
     </button>
 
-    <div class="burger-menu collapse navbar-collapse flex-grow-0" id="navbarSupportedContent">
+    <!-- 手機選單背景顏色是白色哦~ -->
+    <div class="burger-menu d-none d-lg-block flex-grow-0">
       <ul class="navbar-nav text-center mb-6 mb-lg-0">
         <li class="nav-item">
           <a class="py-6 py-lg-10 px-lg-12 fw-bold border-bottom border-bottom-lg-0 border-left-lg fz-5 fz-lg-6" href="./search.html">探索</a>
@@ -58,15 +59,65 @@
         </li>
       </ul>
     </div>
+
   </div>
+
 </nav>
+    <div class="bg-light">
+      <div class="container">
+        <div class="burger-menu collapse d-block d-lg-none pb-6 pb-lg-0" id="navbarSupportedContent">
+          <ul class="navbar-nav text-center mb-6 mb-lg-0">
+            <li class="nav-item">
+              <a class="py-6 py-lg-10 px-lg-12 fw-bold border-bottom border-bottom-lg-0 border-left-lg fz-5 fz-lg-6" href="./search.html">探索</a>
+            </li>
+            <li class="nav-item">
+              <a class="py-6 py-lg-10 px-lg-12 fw-bold border-left-lg fz-5 fz-lg-6" href="./market-capitalisation.html">市值</a>
+            </li>
+            <li class="nav-item">
+              <a class="link-wallet py-3 fw-normal border bg-primary text-light d-block d-lg-none fz-5" href="#myWallet" role="button" data-bs-toggle="modal">連結錢包</a>
+              <a class="py-lg-10 pl-lg-12 fw-bold border-left-lg d-none d-lg-block" href="#myWallet" role="button" data-bs-toggle="modal"><i class="fa-solid fa-wallet"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
 
     
 <div class="container mt-6 mt-lg-10 mb-10 mb-lg-20">
   <h2 class="fz-2 lh-46 fz-lg-1 lh-lg-70 fw-bold mb-4 mb-lg-6 text-center">市價排行榜</h2>
   <h4 class="fz-6 mb-8 mb-lg-12 text-center">NFT系列藝術作品排行榜！全球注目指標</h4>
 
-  <div class="row border mb-m1">
+  <!-- 桌機版型缺少上方，系列作品名稱這塊 -->
+  <div class="row mb-m1">
+    <div class="col-lg-6 pb-4 d-lg-flex justify-content-lg-end d-none d-lg-inline-block">
+      <div class="w-90 d-flex justify-content-lg-between">
+        <span class="fz-6 lh-lg-lg">系列作品名稱</span>
+        <span class="fz-6 lh-lg-lg mr-6">價值</span>
+      </div>
+    </div>
+    <div class="col-lg-6 d-none d-lg-inline-block">
+      <div class="row align-items-center text-lg-end g-0">
+        <div class="w-20 flex-lg-grow-1 text-lg-end">
+          <div class="col fz-6 d-inline-block">24h%</div>
+        </div>
+        <div class="w-20 flex-lg-grow-1 text-lg-end">
+          <div class="col fz-6 d-inline-block">7d%</div>
+        </div>
+        <div class="w-20 flex-lg-grow-1 text-lg-end">
+          <div class="col fz-6 d-inline-block">地板價</div>
+        </div>
+        <div class="w-20 flex-lg-grow-1 text-lg-end">
+          <div class="col fz-6 d-inline-block">擁有者</div>
+        </div>
+        <div class="w-20 flex-lg-grow-1 text-lg-end">
+          <div class="col fz-6 d-inline-block">作品數量</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- table 背景顏色為白色 -->
+  <div class="row bg-light border mb-m1">
     <div class="col-lg-6 position-relative border-bottom mb-m1">
       <a class="collapseBtn btn-triangle2 collapsed d-lg-none position-absolute right-0 bottom-0" data-bs-toggle="collapse" role="button" data-bs-target="#collapseArt1"></a>
       <i class="fa-solid fa-minus text-light icon-10 position-absolute bottom-right-8-px"></i>
@@ -109,7 +160,7 @@
     </div>
   </div>
 
-  <div class="row border mb-m1">
+  <div class="row bg-light border mb-m1">
     <div class="col-lg-6 position-relative border-bottom mb-m1">
       <a class="collapseBtn btn-triangle2 collapsed d-lg-none position-absolute right-0 bottom-0" data-bs-toggle="collapse" role="button" data-bs-target="#collapseArt2"></a>
       <i class="fa-solid fa-minus text-light icon-10 position-absolute bottom-right-8-px"></i>
@@ -152,7 +203,7 @@
     </div>
   </div>
 
-  <div class="row border mb-m1">
+  <div class="row bg-light border mb-m1">
     <div class="col-lg-6 position-relative border-bottom mb-m1">
       <a class="collapseBtn btn-triangle2 collapsed d-lg-none position-absolute right-0 bottom-0" data-bs-toggle="collapse" role="button" data-bs-target="#collapseArt3"></a>
       <i class="fa-solid fa-minus text-light icon-10 position-absolute bottom-right-8-px"></i>
@@ -195,7 +246,7 @@
     </div>
   </div>
 
-  <div class="row border mb-m1">
+  <div class="row bg-light border mb-m1">
     <div class="col-lg-6 position-relative border-bottom mb-m1">
       <a class="collapseBtn btn-triangle2 collapsed d-lg-none position-absolute right-0 bottom-0" data-bs-toggle="collapse" role="button" data-bs-target="#collapseArt4"></a>
       <i class="fa-solid fa-minus text-light icon-10 position-absolute bottom-right-8-px"></i>
@@ -238,7 +289,7 @@
     </div>
   </div>
 
-  <div class="row border mb-m1">
+  <div class="row bg-light border mb-m1">
     <div class="col-lg-6 position-relative border-bottom mb-m1">
       <a class="collapseBtn btn-triangle2 collapsed d-lg-none position-absolute right-0 bottom-0" data-bs-toggle="collapse" role="button" data-bs-target="#collapseArt5"></a>
       <i class="fa-solid fa-minus text-light icon-10 position-absolute bottom-right-8-px"></i>
@@ -281,7 +332,7 @@
     </div>
   </div>
 
-  <div class="row border mb-m1">
+  <div class="row bg-light border mb-m1">
     <div class="col-lg-6 position-relative border-bottom mb-m1">
       <a class="collapseBtn btn-triangle2 collapsed d-lg-none position-absolute right-0 bottom-0" data-bs-toggle="collapse" role="button" data-bs-target="#collapseArt6"></a>
       <i class="fa-solid fa-minus text-light icon-10 position-absolute bottom-right-8-px"></i>
@@ -324,7 +375,7 @@
     </div>
   </div>
 
-  <div class="row border mb-m1">
+  <div class="row bg-light border mb-m1">
     <div class="col-lg-6 position-relative border-bottom mb-m1">
       <a class="collapseBtn btn-triangle2 collapsed d-lg-none position-absolute right-0 bottom-0" data-bs-toggle="collapse" role="button" data-bs-target="#collapseArt7"></a>
       <i class="fa-solid fa-minus text-light icon-10 position-absolute bottom-right-8-px"></i>
@@ -367,7 +418,7 @@
     </div>
   </div>
 
-  <div class="row border mb-m1">
+  <div class="row bg-light border mb-m1">
     <div class="col-lg-6 position-relative border-bottom mb-m1">
       <a class="collapseBtn btn-triangle2 collapsed d-lg-none position-absolute right-0 bottom-0" data-bs-toggle="collapse" role="button" data-bs-target="#collapseArt8"></a>
       <i class="fa-solid fa-minus text-light icon-10 position-absolute bottom-right-8-px"></i>
@@ -410,7 +461,7 @@
     </div>
   </div>
 
-  <div class="row border mb-m1">
+  <div class="row bg-light border mb-m1">
     <div class="col-lg-6 position-relative border-bottom mb-m1">
       <a class="collapseBtn btn-triangle2 collapsed d-lg-none position-absolute right-0 bottom-0" data-bs-toggle="collapse" role="button" data-bs-target="#collapseArt9"></a>
       <i class="fa-solid fa-minus text-light icon-10 position-absolute bottom-right-8-px"></i>
@@ -453,7 +504,7 @@
     </div>
   </div>
 
-  <div class="row border">
+  <div class="row bg-light border">
     <div class="col-lg-6 position-relative border-bottom mb-m1">
       <a class="collapseBtn btn-triangle2 collapsed d-lg-none position-absolute right-0 bottom-0" data-bs-toggle="collapse" role="button" data-bs-target="#collapseArt10"></a>
       <i class="fa-solid fa-minus text-light icon-10 position-absolute bottom-right-8-px"></i>

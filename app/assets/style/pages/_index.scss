@@ -8,7 +8,7 @@
   }
 }
 .artist-photo {
-  height: 232px;
+  height: 300px;
 }
 
 
@@ -16,9 +16,39 @@
   z-index: 1;
 }
 
+.card-image-sm {
+  border-bottom: 1px solid $dark;
+  width: 90px;
+  height: auto;
+  &:hover, &.hvr { // hover後
+    cursor: pointer;
+    &::after { //半透明圖
+      content: 'MORE';
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      opacity: 0.7;
+      background-color: #000;
+      color: $light;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      @include pc {
+        content: '';
+        opacity: 0.5;
+      }
+    }
+    .card-button-sm { //開啟 button
+      display: block;
+      z-index: 1;
+    }
+  }
+}
 
 .card-image {
-  border: 1px solid $dark;
+  border-bottom: 1px solid $dark;
   width: 90px;
   height: auto;
   @include pc {
@@ -83,9 +113,9 @@
 .swiper {
   &-container {
     width: 100%;
-    margin: 40px 0;
+    // margin: 24px 0 40px 0;
     @include pc {
-      margin: 160px 0 80px 0;
+      margin: 48px 0 80px 0;
     }
   }
   &-restrict {
@@ -103,10 +133,18 @@
     & img {
       width: 100%;
     }
+    
+    &.artist-item { //有兩個輪播系統共用，需個別套用
+      filter:grayscale(100%);
+      transform: scale(0.7);
+    }
     &-active.artist-item {
       opacity: 1;
       z-index: 1;
-      transform: scale(2);
+      filter: none;
+      @include pc {
+        transform: scale(1);
+      }
     }
   }
 
@@ -144,19 +182,26 @@
     }
   }
   &-more {
-    width: 25%;
     font-size: 18px;
     line-height: 19px;
-    padding: 4px 20px;
+    padding: 8px 48px;
     position: absolute;
-    bottom: 12px;
-    right: 12px;
     font-weight: normal;
+    bottom: 8px;
+    right: 8px;
+    @include pc {
+      bottom: 24px;
+      right: 24px;
+    }
   }
   &-intro {
-    position: absolute;
-    bottom: 12px;
-    left: 12px;
+    @include pc {
+      opacity: 0.85;
+      width: 50%;
+      position: absolute;
+      bottom: 12px;
+      left: 12px;
+    }
   }
 }
 

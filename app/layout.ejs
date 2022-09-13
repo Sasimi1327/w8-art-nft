@@ -7,6 +7,24 @@
 
   <body>
     <%- include('./partials/header'); %>
+    <div class="bg-light">
+      <div class="container">
+        <div class="burger-menu collapse d-block d-lg-none pb-6 pb-lg-0" id="navbarSupportedContent">
+          <ul class="navbar-nav text-center mb-6 mb-lg-0">
+            <li class="nav-item">
+              <a class="py-6 py-lg-10 px-lg-12 fw-bold border-bottom border-bottom-lg-0 border-left-lg fz-5 fz-lg-6" href="./search.html">探索</a>
+            </li>
+            <li class="nav-item">
+              <a class="py-6 py-lg-10 px-lg-12 fw-bold border-left-lg fz-5 fz-lg-6" href="./market-capitalisation.html">市值</a>
+            </li>
+            <li class="nav-item">
+              <a class="link-wallet py-3 fw-normal border bg-primary text-light d-block d-lg-none fz-5" href="#myWallet" role="button" data-bs-toggle="modal">連結錢包</a>
+              <a class="py-lg-10 pl-lg-12 fw-bold border-left-lg d-none d-lg-block" href="#myWallet" role="button" data-bs-toggle="modal"><i class="fa-solid fa-wallet"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
 
     <%- contents %>
 

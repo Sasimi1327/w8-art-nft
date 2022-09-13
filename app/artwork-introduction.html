@@ -5,7 +5,7 @@ engine: ejs
 current: artwork-introduction
 ---
 
-<div class="container">
+<div class="container mt-6 mt-lg-12">
   <div class="row">
 
     <div class="col-lg-6">
@@ -50,7 +50,7 @@ current: artwork-introduction
     </div>
   </div>
 
-  <div class="row" data-masonry='{"percentPosition": true }'>
+  <div class="row mt-6 mt-lg-0" data-masonry='{"percentPosition": true }'>
     <div class="col-lg-6 mb-6">
       <div class="accordion" id="attributes">
         <div class="accordion-item">
@@ -135,7 +135,7 @@ current: artwork-introduction
                   </div>
 
                 </div>
-                <div class="col-6 pl-lg-4 pb-2 mb-2 border-bottom border-gray-light">
+                <div class="col-6 pl-lg-4 pb-2 mb-2">
                   <p class="fz-6 lh-base text-end text-lg-start text-gray-dark py-1">2週後</p>
                 </div>
               </div>
@@ -160,7 +160,7 @@ current: artwork-introduction
                 <span class="fz-6">代幣ID</span>
                 <span class="fz-6 text-gray-dark">#1234</span>
               </div>
-              <div class="d-flex justify-content-between pb-2 mb-2 border-bottom border-gray-light">
+              <div class="d-flex justify-content-between pb-2 mb-2">
                 <span class="fz-6">合約地址</span>
                 <span class="fz-6 text-gray-dark">青藍金剛鸚鵡</span>
               </div>
@@ -170,7 +170,7 @@ current: artwork-introduction
       </div>
     </div>
 
-    <div class="col-lg-6  mb-0">
+    <div class="col-lg-6 mb-0">
       <div class="accordion" id="tradeRecord">
         <div class="accordion-item">
           <h4 class="accordion-header" id="headingTradeRecord">
@@ -178,9 +178,10 @@ current: artwork-introduction
           </h4>
           <div id="collapseTradeRecord" class="accordion-collapse collapse show" data-bs-parent="#tradeRecord">
             <div class="accordion-body">
-              <table class="table">
+              <table class="table table-borderless">
                 <thead>
-                  <tr>
+                  <!-- 交易歷史的 事件、價格這邊都有 background 另外下方沒 border -->
+                  <tr class="bg-gray-light">
                     <th scope="col fw-normal">事件</th>
                     <th scope="col fw-normal">價格</th>
                     <th scope="col fw-normal">從</th>
@@ -188,7 +189,7 @@ current: artwork-introduction
                   </tr>
                 </thead>
                 <tbody>
-                  <tr>
+                  <tr class="border-bottom border-gray-light">
                     <th scope="row fw-normal">上架</th>
                     <td>2nb</td>
                     <td>
@@ -236,18 +237,30 @@ current: artwork-introduction
   <div class="swiper othersSwiper mt-6 mt-lg-12">
   
     <div class="swiper-wrapper">
-
+      <!-- 每個 slide 內可以使用 a 標籤包住，讓使用者可以點擊切換作品觀看 -->
         <div class="swiper-slide">
+          <a href="#">
             <img class="otherSwiper-item-height img-fluid object-cover object-center" src="./assets/images/art22.jpg" alt="art22">
+            <p class="mt-4">群聚的小鳥們</p>
+          </a>
         </div>
         <div class="swiper-slide">
+          <a href="#">
             <img class="otherSwiper-item-height img-fluid object-cover object-center" src="./assets/images/art27.jpg" alt="art27">
+            <p class="mt-4">我真的受傷了</p>
+          </a>
         </div>
         <div class="swiper-slide">
+          <a href="#">
             <img class="otherSwiper-item-height img-fluid object-cover object-center" src="./assets/images/art20.jpg" alt="art20">
+            <p class="mt-4">這兩隻也太像企鵝了吧</p>
+          </a>
         </div>
         <div class="swiper-slide">
+          <a href="#">
             <img class="otherSwiper-item-height img-fluid object-cover object-center" src="./assets/images/art23.jpg" alt="art23">
+            <p class="mt-4">群聚囉～小鳥</p>
+          </a>
         </div>
 
 

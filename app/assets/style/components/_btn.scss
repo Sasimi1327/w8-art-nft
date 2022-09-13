@@ -26,6 +26,7 @@
 .btn-light:hover {
   background-color: $primary;
   color: $light;
+  border: 1px solid $dark;
 }
 
 // style 2 (無框按鈕)
@@ -69,6 +70,22 @@
   border-bottom: 32px solid $primary;
 }
 
+.card-button-sm {
+  display: none;
+  margin-bottom: -1px;
+  margin-right: -1px;
+  background-color: $primary;
+  border: 1px solid $dark;
+
+  &::after { //三角形
+    content:"";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    border-left: 16px solid transparent;
+    border-bottom: 16px solid $primary;
+  }
+}
 
 .card-button {
   display: none;

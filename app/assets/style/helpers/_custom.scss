@@ -26,6 +26,8 @@ $nav-tabs-link-active-color:        $dark; //tab 選到，字體的顏色
 $nav-tabs-link-active-bg:           $body-bg; //tab 選到，背景的顏色
 $nav-tabs-link-active-border-color: $dark $dark $nav-tabs-link-active-bg; //tab 選到，邊框的顏色
 
+$form-check-input-border:  1px solid $dark;
+
 //spacer
 $custom-spacers: (
   m1: -1px, //minus

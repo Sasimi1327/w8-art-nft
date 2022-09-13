@@ -1,0 +1,46 @@
+
+.artwork-chk.accordion-button { //指定某個區塊套用
+  &:focus, &:not(.collapsed) {
+    box-shadow: none;
+  }
+}
+
+.accordion-item.accordion-attr {
+  border: none;
+}
+.accordion.accordion-attr {
+  border: 1px solid $dark;
+}
+
+.hide-right {
+  position: relative;
+  z-index: 1;
+}
+.hide-right::after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  background-color: $light;
+  width: calc(101% + 1px);
+  height: calc(100% - 15px);
+  left: 1px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.filter-btn {
+  bottom: 16px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+  border: 1px solid transparent;
+}
+.filter-btn a:hover {
+  background: $light;
+  color: $dark;
+  border: 1px solid $dark;
+  & > .badge {
+    background: $light;
+    color: $dark;
+  }
+}

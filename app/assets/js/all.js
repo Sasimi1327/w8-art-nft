@@ -27,6 +27,7 @@ function checkMenuClose(pMatchMedia) {
   if (pMatchMedia.matches) {
     console.log("大於991");
     $("#navbarSearch").collapse("hide");
+    $("#myFilter").modal("hide");
 
     $(".collapseBtn").removeClass("collapsed");
     $(".collapseBtn")

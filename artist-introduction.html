@@ -188,7 +188,7 @@
   
           </ul>
           <div class="text-center ml-lg-22">
-            <button class="btn btn-light btn-triangle">MORE</button>
+            <a href="./artwork-series.html" class="btn btn-light btn-triangle">MORE</a>
           </div>
         </div>
       </div>
@@ -226,7 +226,7 @@
   
           </ul>
           <div class="text-center ml-lg-22">
-            <button class="btn btn-light btn-triangle">MORE</button>
+            <a href="./artwork-series.html" class="btn btn-light btn-triangle">MORE</a>
           </div>
         </div>
       </div>
@@ -503,6 +503,190 @@
             <div class="mx-m16 mx-lg-4 mb-m16 mb-lg-4 my-lg-6 mt-32 mt-lg-6">
               <button class="wallet-link btn btn-primary text-light border py-3 py-lg-2">連結錢包</button>
             </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="modal fade" id="myFilter" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-fullscreen-lg-down">
+        <div class="modal-content bg-light text-center">
+          <div class="d-flex justify-content-center py-4 px-3 mb-6 border-bottom">
+            <h5 class="modal-title fz-4 flex-grow-1">篩選條件</h5>
+            <button type="button" class="btn-close d-lg-none" data-bs-dismiss="modal"></button>
+          </div>
+
+          <div class="modal-body px-0 position-relative">
+            <a href="#" class="w-100 btn btn-primary text-light position-fixed bottom-0 left-50 translate-middle-x py-3 zindex-1">確認</a>
+
+            <div class="accordion" id="network">
+              <div class="accordion-item border-bottom-0">
+                <h4 class="accordion-header" id="headingNetwork">
+                  <button class="accordion-button artwork-chk pb-2 fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNetwork">網路</button>
+                </h4>
+                <div id="collapseNetwork" class="accordion-collapse collapse show" data-bs-parent="#network">
+                  <div class="accordion-body pt-2 pb-0">
+                    <div class="d-flex justify-content-between mb-2">
+                      <label class="form-check-label fz-6" for="ethereum">以太坊</label>
+                      <input type="checkbox" class="form-check-input" value="" id="ethereum"></input>
+                    </div>
+                    <div class="d-flex justify-content-between pb-6 border-bottom">
+                      <label class="form-check-label fz-6" for="binance">BNB 智能鏈</label>
+                      <input type="checkbox" class="form-check-input" value="" id="binance"></input>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion" id="status">
+              <div class="accordion-item border-bottom-0 border-top-0">
+                <h4 class="accordion-header" id="headingStatus">
+                  <button class="accordion-button artwork-chk pb-2 fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseStatus">狀態</button>
+                </h4>
+                <div id="collapseStatus" class="accordion-collapse collapse show" data-bs-parent="#status">
+                  <div class="accordion-body pt-2">
+                    <div class="d-flex justify-content-between mb-2">
+                      <label class="form-check-label fz-6" for="exhibit">僅展示</label>
+                      <input type="checkbox" class="form-check-input" value="" id="exhibit"></input>
+                    </div>
+                    <div class="d-flex justify-content-between pb-6 border-bottom">
+                      <label class="form-check-label fz-6" for="auction">拍賣中</label>
+                      <input type="checkbox" class="form-check-input" value="" id="auction"></input>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion" id="price">
+              <div class="accordion-item border-bottom-0 border-top-0">
+                <h4 class="accordion-header" id="headingPrice">
+                  <button class="accordion-button artwork-chk pb-2 fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapsePrice">價格</button>
+                </h4>
+                <div id="collapsePrice" class="accordion-collapse collapse show" data-bs-parent="#price">
+                  <div class="accordion-body pt-2 pb-0">
+                    <div class="d-flex justify-content-between pb-6 border-bottom">
+                      <select class="form-select mr-1">
+                        <option value="1" selected>ETH</option>
+                        <option value="2">BUSD</option>
+                        <option value="3">USD</option>
+                        <option value="4">BTC</option>
+                        <option value="5">GBP</option>
+                        <option value="6">EUR</option>
+                        <option value="7">TW</option>
+                      </select>
+                      <input class="form-control mr-1" type="text" value="">
+                      <input type="text" readonly class="form-control-plaintext mr-1 text-center" value="-">
+                      <input class="form-control" type="text" value="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion border-top-0 bg-light" id="character">
+
+              <div class="accordion-item accordion-attr mb-6">
+                <h4 class="accordion-header" id="headingCharacter">
+                  <span class="text-gray-dark d-block mt-6 ml-6 fz-6 text-start">屬性</span>
+                  <button class="accordion-button artwork-chk pb-2 fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCharacter">品種</button>
+                </h4>
+                <div id="collapseCharacter" class="accordion-collapse collapse show" data-bs-parent="#character">
+                  <div class="accordion-body pt-2 pb-0">
+                    <div class="d-flex justify-content-between mb-2">
+                      <label class="form-check-label fz-6" for="bird1">八哥</label>
+                      <input type="checkbox" class="form-check-input" value="" id="bird1"></input>
+                    </div>
+                    <div class="d-flex justify-content-between mb-2">
+                      <label class="form-check-label fz-6" for="bird2">虎皮鸚鵡</label>
+                      <input type="checkbox" class="form-check-input" value="" id="bird2" checked></input>
+                    </div>
+                    <div class="d-flex justify-content-between mb-2">
+                      <label class="form-check-label fz-6" for="bird3">太平鳥</label>
+                      <input type="checkbox" class="form-check-input" value="" id="bird3"></input>
+                    </div>
+                    <div class="d-flex justify-content-between mb-2">
+                      <label class="form-check-label fz-6" for="bird4">畫眉鳥</label>
+                      <input type="checkbox" class="form-check-input" value="" id="bird4"></input>
+                    </div>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="accordion-item accordion-attr mb-6">
+                <h4 class="accordion-header" id="headingAmount">
+                  <button class="accordion-button artwork-chk pb-2 pt-0 fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAmount">鳥的數量</button>
+                </h4>
+                <div id="collapseAmount" class="accordion-collapse collapse collapsed" data-bs-parent="#amount">
+                  <div class="accordion-body pt-2 pb-0">
+                    <div class="d-flex justify-content-between mb-2">
+                      <label class="form-check-label fz-6" for="birdAmount1">1隻</label>
+                      <input type="checkbox" class="form-check-input" value="" id="birdAmount1"></input>
+                    </div>
+                    <div class="d-flex justify-content-between mb-2">
+                      <label class="form-check-label fz-6" for="birdAmount2">2隻</label>
+                      <input type="checkbox" class="form-check-input" value="" id="birdAmount2" checked></input>
+                    </div>
+                    <div class="d-flex justify-content-between mb-2">
+                      <label class="form-check-label fz-6" for="birdAmount3">3隻</label>
+                      <input type="checkbox" class="form-check-input" value="" id="birdAmount3"></input>
+                    </div>
+                    <div class="d-flex justify-content-between mb-2">
+                      <label class="form-check-label fz-6" for="birdAmount4">4隻</label>
+                      <input type="checkbox" class="form-check-input" value="" id="birdAmount4"></input>
+                    </div>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="accordion-item accordion-attr mb-6">
+                <h4 class="accordion-header" id="headingFlower">
+                  <button class="accordion-button artwork-chk pb-2 pt-0 fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFlower">是否有花草</button>
+                </h4>
+                <div id="collapseFlower" class="accordion-collapse collapse collapsed" data-bs-parent="#flower">
+                  <div class="accordion-body pt-2 pb-0">
+                    <div class="d-flex justify-content-between mb-2">
+                      <label class="form-check-label fz-6" for="hasFlower">有</label>
+                      <input type="checkbox" class="form-check-input" value="" id="hasFlower"></input>
+                    </div>
+                    <div class="d-flex justify-content-between mb-2">
+                      <label class="form-check-label fz-6" for="withoutFlower">無</label>
+                      <input type="checkbox" class="form-check-input" value="" id="withoutFlower" checked></input>
+                    </div>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="accordion-item accordion-attr mb-6">
+                <h4 class="accordion-header" id="headingColor">
+                  <button class="accordion-button artwork-chk pb-2 pt-0 fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseColor">鳥的顏色</button>
+                </h4>
+                <div id="collapseColor" class="accordion-collapse collapse show" data-bs-parent="#color">
+                  <div class="accordion-body pt-2 pb-0">
+                    <div class="d-flex justify-content-between mb-2">
+                      <label class="form-check-label fz-6" for="birdColor1">紅色</label>
+                      <input type="checkbox" class="form-check-input" value="" id="birdColor1"></input>
+                    </div>
+                    <div class="d-flex justify-content-between mb-2">
+                      <label class="form-check-label fz-6" for="birdColor2">藍色</label>
+                      <input type="checkbox" class="form-check-input" value="" id="birdColor2" checked></input>
+                    </div>
+                    <div class="d-flex justify-content-between mb-2">
+                      <label class="form-check-label fz-6" for="birdColor3">黃色</label>
+                      <input type="checkbox" class="form-check-input" value="" id="birdColor3"></input>
+                    </div>
+                    <div class="d-flex justify-content-between mb-2">
+                      <label class="form-check-label fz-6" for="birdColor4">綠色</label>
+                      <input type="checkbox" class="form-check-input" value="" id="birdColor4"></input>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+
           </div>
         </div>
       </div>

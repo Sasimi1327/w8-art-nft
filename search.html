@@ -88,7 +88,8 @@
   <div class="row" data-masonry='{"percentPosition": true }'>
 
     <div class="col-6 col-md-3 mb-5">
-      <div class="border-bottom"> 
+      <!-- 手機板型圖片是沒有下方線條的 -->
+      <div class="border-bottom-lg"> 
         <div class="card-artwork position-relative">
           <img src="./assets/images/art09.jpg" alt="portfolio-art09" class="img-fluid card-img-top p-2 p-lg-4 bg-light object-cover object-center">
           
@@ -110,7 +111,7 @@
     </div>
 
     <div class="col-6 col-md-3 mb-5">
-      <div class="border-bottom">
+      <div class="border-bottom-lg">
         <div class="card-artwork position-relative">
           <img src="./assets/images/art10.jpg" alt="portfolio-art10" class="img-fluid card-img-top p-2 p-lg-4  bg-light object-cover object-center">
 
@@ -132,7 +133,7 @@
     </div>
 
     <div class="col-6 col-md-3 mb-5">
-      <div class="border-bottom"> 
+      <div class="border-bottom-lg"> 
         <div class="card-artwork position-relative">
           <img src="./assets/images/art02.jpg" alt="portfolio-art02" class="img-fluid card-img-top p-2 p-lg-4  bg-light object-cover object-center">
 
@@ -154,7 +155,7 @@
     </div>
 
     <div class="col-6 col-md-3 mb-5">
-      <div class="border-bottom">
+      <div class="border-bottom-lg">
         <div class="card-artwork position-relative">
           <img src="./assets/images/art11.jpg" alt="portfolio-art11" class="img-fluid card-img-top p-2 p-lg-4  bg-light object-cover object-center">
 
@@ -176,7 +177,7 @@
     </div>
 
     <div class="col-6 col-md-3 mb-5">
-      <div class="border-bottom">
+      <div class="border-bottom-lg">
         <div class="card-artwork position-relative">
           <img src="./assets/images/art12.jpg" alt="portfolio-art12" class="img-fluid card-img-top p-2 p-lg-4  bg-light object-cover object-center">
 
@@ -198,7 +199,7 @@
     </div>
 
     <div class="col-6 col-md-3 mb-5">
-      <div class="border-bottom">
+      <div class="border-bottom-lg">
         <div class="card-artwork position-relative">
           <img src="./assets/images/art03.jpg" alt="portfolio-art03" class="img-fluid card-img-top p-2 p-lg-4  bg-light object-cover object-center">
 
@@ -220,7 +221,7 @@
     </div>
 
     <div class="col-6 col-md-3 mb-5">
-      <div class="border-bottom">
+      <div class="border-bottom-lg">
         <div class="card-artwork position-relative">
           <img src="./assets/images/art04.jpg" alt="portfolio-art04" class="img-fluid card-img-top p-2 p-lg-4  bg-light object-cover object-center">
 
@@ -242,7 +243,7 @@
     </div>
 
     <div class="col-6 col-md-3 mb-5">
-      <div class="border-bottom">
+      <div class="border-bottom-lg">
         <div class="card-artwork position-relative">
           <img src="./assets/images/art27.jpg" alt="portfolio-art27" class="img-fluid card-img-top p-2 p-lg-4 bg-light object-cover object-center">
 
@@ -264,7 +265,7 @@
     </div>
 
     <div class="col-6 col-md-3 mb-5">
-      <div class="border-bottom"> 
+      <div class="border-bottom-lg"> 
         <div class="card-artwork position-relative">
           <img src="./assets/images/art19.jpg" alt="portfolio-art19" class="img-fluid card-img-top p-2 p-lg-4 bg-light object-cover object-center">
           
@@ -286,7 +287,7 @@
     </div>
 
     <div class="col-6 col-md-3 mb-5">
-      <div class="border-bottom"> 
+      <div class="border-bottom-lg"> 
         <div class="card-artwork position-relative">
           <img src="./assets/images/art16.jpg" alt="portfolio-art16" class="img-fluid card-img-top p-2 p-lg-4 bg-light object-cover object-center">
           
@@ -308,7 +309,7 @@
     </div>
 
     <div class="col-6 col-md-3 mb-5">
-      <div class="border-bottom"> 
+      <div class="border-bottom-lg"> 
         <div class="card-artwork position-relative">
           <img src="./assets/images/art15.jpg" alt="portfolio-art15" class="img-fluid card-img-top p-2 p-lg-4 bg-light object-cover object-center">
           
@@ -330,7 +331,7 @@
     </div>
 
     <div class="col-6 col-md-3 mb-5">
-      <div class="border-bottom"> 
+      <div class="border-bottom-lg"> 
         <div class="card-artwork position-relative">
           <img src="./assets/images/art06.jpg" alt="portfolio-art06" class="img-fluid card-img-top p-2 p-lg-4 bg-light object-cover object-center">
           
@@ -445,16 +446,18 @@
     <div class="modal fade" id="myFilter" tabindex="-1">
       <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-fullscreen-lg-down">
         <div class="modal-content bg-light text-center">
-          <div class="d-flex justify-content-center py-4 px-3 mb-6 border-bottom">
+          <!-- 手機篩選條件這邊多了空白 -->
+          <div class="d-flex justify-content-center py-4 px-3 border-bottom">
             <h5 class="modal-title fz-4 flex-grow-1">篩選條件</h5>
             <button type="button" class="btn-close d-lg-none" data-bs-dismiss="modal"></button>
           </div>
-
-          <div class="modal-body px-0 position-relative">
+          <!-- 手機篩選條件這邊多了空白 -->
+          <div class="modal-body px-0 pt-0 mt-m1 position-relative">
             <a href="#" class="w-100 btn btn-primary text-light position-fixed bottom-0 left-50 translate-middle-x py-3 zindex-1">確認</a>
 
             <div class="accordion" id="network-f">
-              <div class="accordion-item border-bottom-0">
+              <!-- 左右兩邊不需要有 border -->
+              <div class="accordion-item border-0 border-top">
                 <h4 class="accordion-header" id="headingNetwork-f">
                   <button class="accordion-button artwork-chk pb-2 fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNetwork-f">網路</button>
                 </h4>
@@ -474,7 +477,7 @@
             </div>
 
             <div class="accordion" id="status-f">
-              <div class="accordion-item border-bottom-0 border-top-0">
+              <div class="accordion-item border-0">
                 <h4 class="accordion-header" id="headingStatus-f">
                   <button class="accordion-button artwork-chk pb-2 fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseStatus-f">狀態</button>
                 </h4>
@@ -494,7 +497,7 @@
             </div>
 
             <div class="accordion" id="price-f">
-              <div class="accordion-item border-bottom-0 border-top-0">
+              <div class="accordion-item border-0">
                 <h4 class="accordion-header" id="headingPrice-f">
                   <button class="accordion-button artwork-chk pb-2 fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapsePrice-f">價格</button>
                 </h4>

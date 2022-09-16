@@ -317,28 +317,29 @@
     <div class="swiper-wrapper">
       <!-- 每個 slide 內可以使用 a 標籤包住，讓使用者可以點擊切換作品觀看 -->
         <div class="swiper-slide">
-          <a href="#">
+          <div>
             <img class="otherSwiper-item-height img-fluid object-cover object-center" src="./assets/images/art22.jpg" alt="art22">
-            <p class="mt-4">群聚的小鳥們</p>
-          </a>
+            <!-- 桌機版型 swiper 圖片下方有 border -->
+            <p class="mt-4 pb-4 border-bottom-lg">群聚的小鳥們</p>
+          </div>
         </div>
         <div class="swiper-slide">
-          <a href="#">
+          <div>
             <img class="otherSwiper-item-height img-fluid object-cover object-center" src="./assets/images/art27.jpg" alt="art27">
-            <p class="mt-4">我真的受傷了</p>
-          </a>
+            <p class="mt-4 pb-4 border-bottom-lg">我真的受傷了</p>
+          </div>
         </div>
         <div class="swiper-slide">
-          <a href="#">
+          <div>
             <img class="otherSwiper-item-height img-fluid object-cover object-center" src="./assets/images/art20.jpg" alt="art20">
-            <p class="mt-4">這兩隻也太像企鵝了吧</p>
-          </a>
+            <p class="mt-4 pb-4 border-bottom-lg">這兩隻也太像企鵝了吧</p>
+          </div>
         </div>
         <div class="swiper-slide">
-          <a href="#">
+          <div>
             <img class="otherSwiper-item-height img-fluid object-cover object-center" src="./assets/images/art23.jpg" alt="art23">
-            <p class="mt-4">群聚囉～小鳥</p>
-          </a>
+            <p class="mt-4 pb-4 border-bottom-lg">群聚囉～小鳥</p>
+          </div>
         </div>
 
 
@@ -441,16 +442,18 @@
     <div class="modal fade" id="myFilter" tabindex="-1">
       <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-fullscreen-lg-down">
         <div class="modal-content bg-light text-center">
-          <div class="d-flex justify-content-center py-4 px-3 mb-6 border-bottom">
+          <!-- 手機篩選條件這邊多了空白 -->
+          <div class="d-flex justify-content-center py-4 px-3 border-bottom">
             <h5 class="modal-title fz-4 flex-grow-1">篩選條件</h5>
             <button type="button" class="btn-close d-lg-none" data-bs-dismiss="modal"></button>
           </div>
-
-          <div class="modal-body px-0 position-relative">
+          <!-- 手機篩選條件這邊多了空白 -->
+          <div class="modal-body px-0 pt-0 mt-m1 position-relative">
             <a href="#" class="w-100 btn btn-primary text-light position-fixed bottom-0 left-50 translate-middle-x py-3 zindex-1">確認</a>
 
             <div class="accordion" id="network-f">
-              <div class="accordion-item border-bottom-0">
+              <!-- 左右兩邊不需要有 border -->
+              <div class="accordion-item border-0 border-top">
                 <h4 class="accordion-header" id="headingNetwork-f">
                   <button class="accordion-button artwork-chk pb-2 fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNetwork-f">網路</button>
                 </h4>
@@ -470,7 +473,7 @@
             </div>
 
             <div class="accordion" id="status-f">
-              <div class="accordion-item border-bottom-0 border-top-0">
+              <div class="accordion-item border-0">
                 <h4 class="accordion-header" id="headingStatus-f">
                   <button class="accordion-button artwork-chk pb-2 fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseStatus-f">狀態</button>
                 </h4>
@@ -490,7 +493,7 @@
             </div>
 
             <div class="accordion" id="price-f">
-              <div class="accordion-item border-bottom-0 border-top-0">
+              <div class="accordion-item border-0">
                 <h4 class="accordion-header" id="headingPrice-f">
                   <button class="accordion-button artwork-chk pb-2 fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapsePrice-f">價格</button>
                 </h4>

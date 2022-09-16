@@ -145,7 +145,8 @@
 <div class="container">
   <ul class="nav nav-tabs" id="myTab" role="tablist">
     <li class="nav-item" role="presentation">
-      <button class="nav-link active fz-2 lh-34 fz-lg-1 lh-lg-50 text-nowrap py-lg-4 px-lg-12" id="artwork-tab" data-bs-toggle="tab" data-bs-target="#artwork" type="button" role="tab">Art Works<span class="d-none d-lg-block fz-4 lh-26 fw-bold d-inline-block align-bottom">系列作品</span></button>
+      <button class="nav-link active fz-2 lh-34 fz-lg-1 lh-lg-50 text-nowrap py-lg-4 px-lg-12" id="artwork-tab" data-bs-toggle="tab" data-bs-target="#artwork" type="button" role="tab">Art Works<span class="d-none d-lg-block fz-4 lh-26 fw-bold d-inline-block align-bottom">系列作品</span>
+      </button>
     </li>
     <li class="nav-item d-flex" role="presentation">
       <button class="nav-link masonry fz-2 lh-34 fz-lg-1 lh-lg-50 text-nowrap py-lg-4 px-lg-12" id="collection-tab" data-bs-toggle="tab" data-bs-target="#collect" type="button" role="tab">Collection<span class="d-none d-lg-block fz-4 lh-26 fw-bold d-inline-block">收藏品</span></button>
@@ -512,16 +513,18 @@
     <div class="modal fade" id="myFilter" tabindex="-1">
       <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-fullscreen-lg-down">
         <div class="modal-content bg-light text-center">
-          <div class="d-flex justify-content-center py-4 px-3 mb-6 border-bottom">
+          <!-- 手機篩選條件這邊多了空白 -->
+          <div class="d-flex justify-content-center py-4 px-3 border-bottom">
             <h5 class="modal-title fz-4 flex-grow-1">篩選條件</h5>
             <button type="button" class="btn-close d-lg-none" data-bs-dismiss="modal"></button>
           </div>
-
-          <div class="modal-body px-0 position-relative">
+          <!-- 手機篩選條件這邊多了空白 -->
+          <div class="modal-body px-0 pt-0 mt-m1 position-relative">
             <a href="#" class="w-100 btn btn-primary text-light position-fixed bottom-0 left-50 translate-middle-x py-3 zindex-1">確認</a>
 
             <div class="accordion" id="network-f">
-              <div class="accordion-item border-bottom-0">
+              <!-- 左右兩邊不需要有 border -->
+              <div class="accordion-item border-0 border-top">
                 <h4 class="accordion-header" id="headingNetwork-f">
                   <button class="accordion-button artwork-chk pb-2 fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNetwork-f">網路</button>
                 </h4>
@@ -541,7 +544,7 @@
             </div>
 
             <div class="accordion" id="status-f">
-              <div class="accordion-item border-bottom-0 border-top-0">
+              <div class="accordion-item border-0">
                 <h4 class="accordion-header" id="headingStatus-f">
                   <button class="accordion-button artwork-chk pb-2 fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseStatus-f">狀態</button>
                 </h4>
@@ -561,7 +564,7 @@
             </div>
 
             <div class="accordion" id="price-f">
-              <div class="accordion-item border-bottom-0 border-top-0">
+              <div class="accordion-item border-0">
                 <h4 class="accordion-header" id="headingPrice-f">
                   <button class="accordion-button artwork-chk pb-2 fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapsePrice-f">價格</button>
                 </h4>

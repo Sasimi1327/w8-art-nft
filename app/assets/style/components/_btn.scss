@@ -41,7 +41,7 @@
 // 確認、出價、連結錢包
 
 // style 4 
-.btn-triangle2::after {
+.btn-triangle2::after { //open
   content:"";
   position: absolute;
   right: 0;
@@ -52,10 +52,10 @@
   border-left: 32px solid transparent;
   border-bottom: 32px solid $primary;
 }
-.btn-triangle2:hover::after{
+.btn-triangle2:hover::after{ //open
   border-bottom: 32px solid $dark;
 }
-.btn-triangle2.collapsed::after {
+.btn-triangle2.collapsed::after { //close
   content:"";
   position: absolute;
   right: 0;
@@ -66,7 +66,7 @@
   border-left: 32px solid transparent;
   border-bottom: 32px solid $dark;
 }
-.btn-triangle2.collapsed:hover::after{
+.btn-triangle2.collapsed:hover::after{ //close
   border-bottom: 32px solid $primary;
 }
 
